@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <title> Webtech 2018 </title>
+        <meta name="viewport" content="initial-scale=1" />
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+    </head>
+    <body>
+        
+        <header class="top-header">
+          <!--  <h1>Website Title</h1> -->
+            <img src="../img/webtech2.png" alt="Logo">
+        </header> 
+        
+        <aside>
+            <ul>
+                <li><a href = "../index.html">WWW</a></li>
+                <li><a href = "http.html">HTTP</a></li>
+                <li><a href = "methods.html" class="active">HTTP Methods & Definitions</a></li>
+                <li><a href = "html.html">HTML</a></li>
+            </ul>
+        </aside>
+        
+        <article>
+            <header class="article-header">
+                <h1> HTTP Methods & Definitions </h1>
+            </header>
+            <section>
+                <h1>Header Field Definitions</h1>
+                <ul>
+                    <li> 
+                        <strong>Accept</strong> 
+                        <ul>
+                            <li>
+                                it is used to specify certain files that can be accepted for the response. 
+                            </li>
+                            <li>
+                                the <strong> q </strong> parameter, this is used for indicating the priority of the files that the server should return. It's value ranges from zero to one (0-1), with 1 being the default value. <strong>The higher the q value the higher the priority.</strong>
+                            </li>
+                            <li>
+                                if there is no Accept header field, then it is assumed that the user accepts all file types.
+                            </li>
+                        </ul>
+                        
+                    </li>
+                    <li> 
+                        <strong>Accept-Encoding</strong>
+                        <ul>
+                            <li>
+                                it is similar to the Accept header, but limits the content-encodings of the files.
+                            </li>
+                        </ul>
+                    </li>
+                    <li> 
+                        <strong>Accept-Ranges</strong>
+                        <ul>
+                            <li>
+                                allows the server to specify its range request's acceptance for the file.
+                            </li>
+                        </ul>
+                    </li>
+                    <li> 
+                        <strong>Authorization</strong>
+                        <ul>
+                            <li>
+                                contains the credentials for the authentication information of the user in the desired resource that is requested.
+                            </li>
+                            <li>
+                                if the request is authenticated and the resource is specified, the same username and password should work for any other requests inside that resource.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h1> Method Definitions </h1>
+                <ul>
+                    <li> 
+                        <strong>Safe Methods</strong>
+                        <ul>
+                            <li>
+                                is a <strong> read-only </strong> file. It does not take any othre action other than retrieval.
+                            </li>
+                            <li>
+                                this only uses the <em>GET, HEAD, OPTIONS &, TRACE </em> methods.
+                            </li>
+                        </ul>
+                    </li>
+                    <li> 
+                        <strong>Idempotent Methods</strong>
+                        <ul>
+                            <li>
+                                even if the methods get repeated, it will <strong>always result to the same output.</strong>
+                            </li>
+                            <li>
+                                this method uses the <em>GET, HEAD, OPTIONS , PUT, DELETE &, TRACE </em> methods.
+                            </li>
+                        </ul>
+                    </li>
+                    <li> 
+                        <strong>Cacheable Methods</strong>
+                        <ul>
+                            <li>
+                                storage that is accessible to the client to be stored for future use.
+                            </li>
+                            <li>
+                                this method can also save up bandwidth.
+                            </li>
+                            <li>
+                                this method only uses the <em>GET, HEAD &, POST </em> methods.
+                            </li>
+                        </ul>
+                    </li>
+                    <li> 
+                        <strong>Standard Methods</strong>
+                        <ul>
+                            <li>
+                                <strong>GET</strong>
+                                - must be supported by every server.
+                                <p> - fetch requirement to all servers. </p>
+                            </li>
+                            <li>
+                                <strong>HEAD</strong>
+                                - must be supported by every server.
+                                <p> - same as the GET method but doesn't have a body. </p>
+                                <p> - is used to retrieve meta data. </p>
+                            </li>
+                            <li>
+                                <strong>POST</strong>
+                                - is used to make changes in the target resource.
+                                <p> - enclosed as the message body. </p>
+                                <p> - performs resource and specific processing. </p>
+                                <p> - enclosed as body. </p>
+                            </li>
+                            <li>
+                                <strong>PUT</strong> 
+                                - generates a resource
+                                <p> <em> - this method is not supported by default and is difficult to implement </em></p>
+                            </li>
+                            <li>
+                                <strong>DELETE</strong> 
+                                - removes a resource
+                                <p> <em> - this method is not supported by default and is difficult to implement </em></p>
+                            </li>
+                            <li>
+                                <strong>OPTIONS</strong> 
+                                - tells what you can do to the resource.
+                            </li>
+                            <li>
+                                <strong>TRACE</strong>
+                                - allows the server to echo the request.
+                            </li>
+                            <li>
+                                <strong>CONNECT</strong>
+                                - create a secure connection and establish a tunnel.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            
+            <section>
+                <h1> Status Code Definitions </h1>
+                <br /> <br />
+                <table>
+                    <tr>
+                        <th> Informational (1XX) </th>
+                        <th> Success (2XX) </th>
+                        <th> Redirection (3XX) </th>
+                        <th> Client Error (4XX) </th>
+                        <th> Server Error (5XX) </th>
+                    </tr>
+                    <tr>
+                        <td class="first"> 100 Continue </td>
+                        <td class="second"> 200 OK </td>
+                        <td class="third"> 300 Multiple Choices </td>
+                        <td class="fourth"> 400 Bad Request </td>
+                        <td class="fifth"> 500 Internal Server Error </td>
+                    </tr>
+                    <tr>
+                        <td class="first"> 101 Switching Protocols </td>
+                        <td class="second"> 201 Created </td>
+                        <td class="third"> 301 Moved Permanently </td>
+                        <td class="fourth"> 401 Unauthorized </td>
+                        <td class="fifth"> 501 Not Implemented </td>
+                    </tr>
+                    <tr>
+                        <td class="first" rowspan="3">  </td>
+                        <td class="second"> 202 Accepted </td>
+                        <td class="third"> 302 Found </td>
+                        <td class="fourth"> 402 Payment Required </td>
+                        <td class="fifth"> 502 Bad Gateway </td>
+                    </tr>
+                    <tr>
+                        <td class="second"> 203 Non-authoritative Info </td>
+                        <td class="third"> 303 See other </td>
+                        <td class="fourth"> 403 Forbidden </td>
+                        <td class="fifth"> 503 Service unavailable </td>
+                    </tr>
+                    <tr>
+                        <td class="second"> 204 No Content </td>
+                        <td class="third"> 304 Not Modified </td>
+                        <td class="fourth"> 404 Not Found </td>
+                        <td class="fifth"> 504 Gateway Timeout </td>
+                    </tr>
+                </table>
+                <h4> Other status codes are available <strong><a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html" target="_blank"> here. </a></strong> </h4>
+            </section>
+
+        </article>
+        
+        <footer>
+            <h5>© 2018 All Rights Reserved.</h5>
+            <h6>Saint Louis University, Baguio City</h6>
+            <h6>Web Systems and Technologies</h6>
+        </footer>
+    </body>
+</html>

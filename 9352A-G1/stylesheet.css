@@ -9,6 +9,7 @@ body{
     background: #fefefe;
     font-family: 'Trebuchet MS';
     font-size: 1.2vw;
+    width: 100%;
 }
 
 header.top-header{
@@ -18,7 +19,7 @@ header.top-header{
     font-size: 1vw;
     position: fixed;
     width: 100%;
-    height: 30px;
+    height: 4.6%;
     z-index: 77;
 }
 
@@ -39,7 +40,7 @@ aside{
     position: fixed;
     padding: 0;
     margin: 0;
-    margin-top: 55px;
+    margin-top: 4.5%;
 }
 
 aside ul{
@@ -78,8 +79,8 @@ article{
 }
 
 section{
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 7%;
+    clear: left;
 }
 
 header.article-header h1{
@@ -89,9 +90,22 @@ header.article-header h1{
     border-bottom: 3px solid #2b7a78;
 }
 
+strong a{
+    color: blue;
+    text-decoration: none;
+}
+
+strong a:hover{
+    color: black;
+}
+
 section h1{
     font-size: 1.7vw;
     margin: 0;
+    background-color: #2b7a78;
+    padding: 1%;
+    color: white;
+    display: inline-table;
 }
 
 section li{
@@ -123,16 +137,77 @@ h2{
     display: inline-table;
 }
 
+section.with-pic ul{
+    float: left;
+    width: 60%;
+    padding-right: 12%;
+}
+
+section. with-pic figure{
+    float: right;
+}
+
+article figure{
+    text-align: center;
+}
+
+section figure img{
+    border: 2px solid black;  
+}
+
+figcaption{
+    font-style: italic;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+h4{
+    text-align: center;
+}
+
 h3{
     padding: 0px;
     margin: 0.5%;
     margin-left: 5%;
 }
 
+ul li p{
+    padding: 0px;
+    margin: 0px;
+    margin-left: 6.5%;
+}
+
+table, tr, td{
+    border: 2px solid black;
+    padding: 1%;
+    background-color: burlywood;
+}
+
+td.first{
+    background-color: skyblue;
+}
+
+td.second{
+    background-color: limegreen;
+}
+
+td.third{
+    background-color: yellow;
+}
+
+td.fourth{
+    background-color: orange;
+}
+
+td.fifth{
+    background-color: firebrick;
+}
+
 footer{
     background: #101010;
     z-index: 77;
     padding: 1%;
+    clear: left;
 }
 
 footer h5{    

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <title> Webtech 2018 </title>
+        <meta name="viewport" content="initial-scale=1" />
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+    </head>
+    <body>
+        
+        <header class="top-header">
+          <!--  <h1>Website Title</h1> -->
+            <img src="../img/webtech2.png" alt="Logo">
+        </header> 
+        
+        <aside>
+            <ul>
+                <li><a href = "../index.html">WWW</a></li>
+                <li><a href = "http.html" class="active">HTTP</a></li>
+                <li><a href = "methods.html">HTTP Methods & Definitions</a></li>
+                <li><a href = "html.html">HTML</a></li>
+            </ul>
+        </aside>
+        
+        <article>
+            <header class="article-header">
+                <h1> Hypertext Transfer Protocol (HTTP) </h1>
+            </header>
+            
+            <figure> 
+                <img src="../img/http.png" alt="HTTP picture">
+            </figure>
+            
+            <section>
+                <h1>What is HTTP?</h1>
+                <ul>
+                    <li> 
+                        It is based on a client-server architecture.
+                        <ul>
+                            <li>
+                                <strong> Servers </strong> 
+                                    - the origin server.
+                            </li>
+                            <li>
+                                <strong> Clients </strong> 
+                                    - also known as User Agents. 
+                                <p>
+                                    - these are the web browsers and the web crawlers.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li> 
+                        Communicates usually through TCP/IP.
+                    </li>
+                    <li> 
+                        Communicated through hosts and clients via request and response.
+                    </li>
+                    <li> 
+                        Uses <strong> port 80 </strong> 
+                        as it's default.
+                    </li>
+                    <li>
+                        A communication protocol used to access resources on the <strong><a href="../index.html"> World Wide Web </a></strong>. Invented by <strong><a href="../index.html#timbl"> Sir Tim Berners-Lee </a></strong> at CERN in 1989.
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h1> HTTP Version History </h1>
+                <ul>
+                    <li> 
+                        <strong>HTTP 0.9(1991)</strong>
+                    </li>
+                    <li> 
+                        <strong>HTTP 1.0(RFC 1945, May 1996)</strong> - get, header, post 
+                    </li>
+                    <li> 
+                        <strong>HTTP 1.1(RFC 2068 Jan 1997; RFC 2616 June 1999), RFC 7230 - 7235(June 2014)</strong>
+                    </li>
+                    <li> 
+                        <strong>HTTP 2(RFC 7540 May 2015)</strong> - additional mechanism in the transmission of data with header compression that allows multi pleasing which is more enhanced than the previous versions.
+                    </li>
+                </ul>
+                <h3> HTTP is a stateless communications protocol and uses request messages. </h3>
+                Its functionalities include:
+                <ul>
+                    <li>
+                        <strong>Cache Control</strong>
+                    </li>
+                    <li>
+                        <strong>Content Media type (MIME)</strong>
+                    </li>
+                    <li>
+                        <strong>Persistent Connection</strong>, thus it can be reused
+                    </li>
+                    <li>
+                        <strong>Request Pipelining/Multiplexing</strong> - can have many request at a time.
+                    </li>
+                    <li>
+                        <strong>Authentication/Authorization</strong> - talks about the security and identifies if the client can be verified and authorized at the same time.
+                    </li>
+                </ul>
+                
+            </section>
+            <section>
+                <h1> HTTP Resource Addressing </h1>
+                <ul>
+                    <li> 
+                        <strong>Scheme (http or https)</strong>
+                    </li>
+                    <li> 
+                        <strong>Authority</strong> - <strong><a href="../index.html#dns"> domain name </a></strong> (resolved to an IP address DNS), host, post number and user information or authentication credentials.
+                    </li>
+                    <li>
+                        <strong>Path to resource</strong> (to resolve relative to the document on the server). This may be a static or dynamic resource.
+                    </li>
+                    <li>
+                        <strong>Query</strong> - set of key = value pairs use:
+                        <ul>
+                            <li> Ampersand (&) </li>
+                            <li> Delimiter (?) </li>
+                            <li> URL-encoded (>) </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Fragment identifier</strong> - subsection in a document, hash sign (#) symbol.
+                    </li>
+                </ul>  
+            </section>
+            
+            <section>
+                <h1> Request Message </h1>
+                <ul>
+                    <li>
+                        The request message from the client to the server
+                    </li>
+                    <li>  
+                        <strong> First line: Request Line </strong>
+                        <ul>
+                            <li> 
+                                <em> Syntax: METHOD_TARGET_PROTOCOL </em> 
+                            </li>
+                            
+                            <li>
+                                <b> Note: </b> Please keep in mind that the underscores (_) are considered as SP or spaces to separate the codes from one another.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section> 
+            
+            <section>
+                <h1> Response Message </h1>
+                <ul>
+                    <li>  
+                        After the request message has been sent and interpreted, the server will now respond with an HTTP response message
+                    </li>
+                    <li>  
+                        <strong> First line: Response Line </strong>
+                        <ul>
+                            <li> 
+                                <em> Syntax: PROTOCOL_STATUSCODE_TEXTUALPHRASE </em> 
+                            </li>
+                            <li>
+                                <b> Note: </b> Please keep in mind that the underscores (_) are considered as SP or spaces to separate the codes from one another.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section> 
+            
+            <section>
+                <h1> Message Headers </h1>
+                <ul>
+                    <li>  
+                        <em> Syntax: FIELD-NAME ":" FIELD-VALUE  </em>
+                    </li>
+                </ul>
+                Three (3) types:
+                <ul>
+                    <li>
+                        <strong>General</strong> - related to the characteristics itself.
+                    </li>
+                    <li>
+                        <strong>Entity</strong> - characteristics of the body
+                    </li>
+                    <li>
+                        <strong>Response</strong>
+                    </li>
+                </ul>
+            </section> 
+            
+        </article>
+        
+        <footer>
+            <h5>© 2018 All Rights Reserved.</h5>
+            <h6>Saint Louis University, Baguio City</h6>
+            <h6>Web Systems and Technologies</h6>
+        </footer>
+    </body>
+</html>
