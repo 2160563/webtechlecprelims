@@ -2,8 +2,13 @@
 	font-family: Open-sans;
 	src: url(fonts/Open_Sans/OpenSans-Regular.ttf);
 }
+@font-face{
+	font-family: Open-bold;
+	src: url(fonts/Open_Sans/OpenSans-Bold.ttf);
+}
 html{
-	width: 100%;
+	margin: 0;
+	padding: 0;
 	height: 100%;
 }
 body{
@@ -14,16 +19,17 @@ header{
 	position: fixed;
 	width: 100%;
 	float: left;
-	background-color: #bf1205;
+	background-color: #f7882f;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 5;
+	top: 0;
 }
 header img{
 	width: 17%;
 	padding: 1% 1% 0% 2%;
 }
 nav{
-	background-color: #bf1205;
+	background-color: #f7882f;
 	list-style: none;
 	margin: 0%;
 	padding: 0%;
@@ -51,7 +57,7 @@ nav{
 }
 #prelim, #midterm, #finals{
 	display: none;
-	background-color: #bf1205;
+	background-color: #dcc7aa;
 	z-index: 1;
 	position: absolute;
 	padding: 0px;
@@ -64,34 +70,39 @@ nav{
 }
 #prelim li a, #midterm li a, #finals li a{
 	display: block;
-	color: #efefef;
+	color: #6b7a8f;
 	text-decoration: none;
 	padding: 13px;
 	font-size: 14px;
 }
 #nav > li:hover > a{
-	background-color: #efefef;
-	color: #bf1205;
+	background-color: #dcc7aa;
+	color: #6b7a8f;
 	font-weight: 500;
+	transition: 0.4s;
 }
 #nav > li > ul > li > a:hover{
 	background-color: #efefef;
-	color: black;
+	color: #6b7a8f;
+	transition: 0.4s;
 }
 #nav li:hover ul{
 	display: block;
+	transition: 0.4s;
 }
 #background{
 	padding-top: 3%;
+	float: left;
+	width: 100%;
 }
 #background img{
 	width: 72%;
 	display: block;
 	margin-left: auto;
-	margin-right: auto;
+	margin-right: auto;   
 }
 footer{
-	position: absolute;
+	float: left;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -101,13 +112,18 @@ footer{
 	font-family: Open-sans;
 	font-size: 0.8vw;
 	line-height: 60%;
-	border-top: 4px solid #bf1205;
+	border-top: 5px solid #f7882f;
+	margin-top: 1%;
+	width: 100%;
 }
 footer p{
 	padding-right: 2%;
 }
 footer p:first-child{
 	font-size: 1.1vw;
+}
+.content-footer{
+	margin-top: 5%;
 }
 
 
@@ -123,3 +139,71 @@ footer p:first-child{
 				-webkit-transform: rotate(359deg);
 		}
 }*/
+aside h2{
+	clear: both;
+	padding-top: 8%;
+	font-family: Open-sans;
+}
+aside h2 span{
+	background-color: #6b7a8f;
+	color: #efefef;
+	padding: 1% 5% 1% 8%;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+section{
+	font-family: Open-sans;
+	float: left;
+	width: 100%;
+}
+section h3{
+	padding: 2% 0% 0% 10%;
+	color: #f7882f;
+	font-size: 1.7vw;
+}
+section ul{
+	padding-left: 15%;
+	list-style: square;
+	margin-right: 5%;
+}
+section ul li{
+	line-height: 2;
+}
+section a, section a:visited{
+	text-decoration: underline;
+	color: #328cc1;
+}
+#sir-tim ul{
+	float: left;
+	width: 50%;
+}
+#sir-tim figure{
+	float: right;
+	background-color: #6b7a8f;
+	padding: 2% 13% 0.5% 2%;
+	margin: -23% 0;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#sir-tim figure figcaption{
+	color: #efefef;
+	text-align: center;
+}
+section h4{
+	text-align: center;
+	font-size: 1.7vw;
+}
+section span{
+	padding-left: 16%;
+	line-height: 1;
+}
+.protocol{
+	color: red;
+	background: none;
+}
+.domain-name{
+	color: blue;
+	background: none;
+}
+.resource-name{
+	color: green;
+	background: none;
+}
