@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <meta name="viewport" content="initial-scale=1">
+        <meta charset="UTF-8">
+        <title>Webtech 2018</title>
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+        <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    </head>
+    
+    <body>
+        <header>
+        <a href="../index.html"><img src="../img/webtech2.png" alt="Site Logo"></a>
+        
+        <nav>
+            <ul id="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li class="with-dropdown">
+                    <a href="">Prelim</a>
+                    <ul class="menu">
+                        <li><a href="www.html">WWW</a></li>
+                        <li class="side-drop"><a href="http.html">HTTP</a>
+                            <ul class="submenu">
+                                <li><a href="headers.html">HTTP Headers</a></li>
+                                <li><a href="methods.html">HTTP Methods</a></li>
+                                <li><a href="reqresmessages.html">HTTP Request & Response Messages</a></li>
+                            </ul>
+                        </li>
+                        <li class="side-drop"><a href="html.html">HTML</a>
+                            <ul class="submenu">
+                                <li><a href="htmlhistory.html">HTML History</a></li>
+                                <li><a href="xhtml.html">XHTML & HTML</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="with-dropdown">
+                    <a href="">Midterm</a>
+                    <ul class="menu">
+                        <li class="side-drop"><a href="css.html">CSS</a>
+                        <ul class="submenu">
+                            <li><a href="css_statements.html">CSS Statements</a></li>
+                            <li><a href="css_selectors.html">CSS Selectors</a></li>
+                            <li><a href="css_combinators.html">CSS Combinators</a></li>
+                            <li><a href ="css_pseudoclasses_elements.html">CSS Pseudo Classes and Elements</a></li>
+                            <li><a href="css_ruleprecedence.html">CSS Rule Precedence</a></li>
+                            <li><a href="css_declarations.html">CSS Declarations</a></li>
+                            <li><a href="css_pfp.html">CSS Preprocessors, Frameworks and Polyfills</a></li>      
+                        </ul>
+                        </li>
+                        <li><a href="">JavaScript</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="">Finals</a>
+                    <!-- ul class="menu">
+                        <li><a href="">Item1</a></li>
+                        <li><a href="">Item2</a></li>
+                        <li><a href="">Item3</a></li>
+                        <li><a href="">Item4</a></li>
+                    </ul> -->
+                </li>
+
+                <li>
+                    <a href="">Self Assessment</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+        
+        <aside>
+            <h2><span>CSS Pseudo Classes and Elements</span></h2>
+        </aside>
+        
+        <section>
+            <h3>What is a Pseudo Class?</h3>
+            <p>A <strong class = "highlight-text">pseudo-class</strong> is a keyword that included in a selector that defines a special state of the selected element(s). With the help of pseudo-classes, you do not need to use JavaScript to add effects to some selectors. For example, if you want to change a navigation tab’s color when user hovers over it, use the :hover pseudo-class. </p>
+        </section>
+        
+        <section>
+            <h3>Syntax</h3>
+            <p>Here is a simple valid syntax of pseudo-classes:</p>
+<pre class = "pre-dif">
+selector: pseudo-class }
+    property: value;
+}
+</pre>
+            
+            <p>If a CSS class is used with pseudo-classes, the syntax is as follows:</p>
+<pre class = "pre-dif">
+selector.classname:pseudo-class {
+    property: value;
+}
+</pre>
+        </section>
+        
+        <section>
+            <h3>List of Pseudo Classes</h3>
+            <p>Here is the list of most used pseudo-classes, and are categorized by its functionality:</p>
+            <ol class = "main-list">
+                <li>Dynamic Pseudo Classes</li>
+                
+                <ul class = "sub-list">
+                    <li>Link pseudo-classes </li>
+                    <table>
+                        <tr>
+                            <td><mark>:link</mark></td>
+                            <td><p>used to add style to unvisited links</p></td>
+                        </tr>
+                        <tr>
+                            <td><mark>:visited</mark></td>
+                            <td><p>used to add style to visited links</p></td>
+                        </tr>
+                    </table>
+                    
+                    <li>User Action</li>
+                    <table>
+                        <tr>
+                            <td><mark>:active</mark></td>
+                            <td><p>used to add style to an active element</p></td>
+                        </tr>
+                        <tr>
+                            <td><mark>:hover</mark></td>
+                            <td><p>used to add style to an element when a user mouse over it</p></td>
+                        </tr>
+                        <tr>
+                            <td><mark>:focus</mark></td>
+                            <td><p>used to add style to an element while the element has focus</p></td>
+                        </tr>
+                    </table>
+                </ul>
+                
+                <li>Target Pseudo Classes</li>
+                <table>
+                    <tr>
+                        <td><mark>:target</mark></td>
+                        <td><p>used to add style the current active target element</p></td>
+                    </tr>
+                </table>
+                
+                <li>Language Pseudo Classes</li>
+                <table>
+                    <tr>
+                        <td><mark>:lang()</mark></td>
+                        <td><p>used to specify a language to use in a specified element</p></td>
+                    </tr>
+                </table>
+                
+                <li>UI Element Pseudo Classes</li>
+                <table>
+                    <tr>
+                        <td><mark>:enabled</mark></td>
+                        <td><p>used to add style to any enabled element. It is only associated with form elements such as &lt;input&gt;, &lt;textarea&gt;, &lt;select&gt; and the like. An element is enabled if it can be activated, means it can be selected, clicked on, typed into, etc. </p></td>
+                    </tr>
+                    <tr>
+                        <td><mark>:disabled</mark></td>
+                        <td><p>used to add style to any disabled element. This class is vice versa of :enabled pseudo-class, stated above.</p></td>
+                    </tr>
+                    <tr>
+                        <td><mark>:checked</mark></td>
+                        <td><p>used to add style to any radio, checkbox, or option element that is checked or toggled to an on state. </p></td>
+                    </tr>
+                    <tr>
+                        <td><mark>:indeterminate</mark></td>
+                        <td><p>used to add style to any form element whose state is indeterminate</p></td>
+                    </tr>                    
+                </table>
+                
+                <li>Structural Pseudo Classes</li>
+                <table>
+                    <tr>
+                        <td><mark>:root</mark></td>
+                        <td><p>This class matches the root element of a web document, for example, in HTML, the :root represents the &lt;html&gt; element. The only difference is that this the :root has higher specificity then the &lt;html&gt; element. So, it is used to add style to the root element of a document.</p></td>
+                    </tr>
+                    <tr>
+                        <td><mark>:first-child, :last-child, :only-child</mark></td>
+                        <td><p>used to add style to an element that is the first child of some other element. Same as on the situation of the last child and only child of an element.</p></td>
+                    </tr>
+                    <tr>
+                        <td><mark>:nth-child(), :nth-last-child()</mark></td>
+                        <td><p>used to add style to at least one element based on their position among a group of sibling elements. The :nth-child and “nth-last-child take an argument that can be a single integer, keywords (“odd” or “even”), or a formula.</p>
+                        <p>The :nth-child() targets through elements starting from the top to bottom of a group of siblings. While, the :nth-last-child() starts from the bottom to top. </p></td>
+                    </tr>
+                    <tr>
+                        <td><mark>:first-of-type, :last-of-type, :only-of-type </mark></td>
+                        <td><p>used to add style the first element of its type among a group of sibling elements. It is quite similar to :nth-child() class, but this class is more specific.</p></td>
+                    </tr>
+                    <tr>
+                        <td><mark>:nth-of-type, :nth-last-of-type</mark></td>
+                        <td><p>Used to add style to one or more elements of a given type based on their position among a group of sibling elements. This class is quite similar to :nth-last-child() class, but it is more specific.</p></td>
+                    </tr>
+                    <tr>
+                        <td><mark>:empty</mark></td>
+                        <td><p>Used to add style to any element that has no children. </p></td>
+                    </tr>                    
+                </table>
+                
+                <li>Negation Pseudo Classes</li>
+                <table>
+                    <tr>
+                        <td><mark>:not()</mark></td>
+                        <td><p>Used to prevent specific item or element from being selected. For example, you want to change the color of your page to red excluding those values in &lt;p&gt; element, use these rule set:</p>
+  <pre>
+ :not(p) {
+    color: red;
+}
+</pre>
+                        </td>
+                    </tr>
+                </table>                
+            </ol>
+        </section>
+        
+        <section>
+            <h3>What is a Pseudo Element?</h3>
+            <p>A <strong class = "highlight-text">pseudo element</strong> is used to style specified parts of an element. In addition, it is also a keyword added to a selector that lets you style a specific part of the selected elements.</p>
+            <p>Here is the list of pseudo elements:</p>
+            <table>
+                <tr>
+                    <td><mark>::after </mark></td>
+                    <td><p>This element is used to insert something after the content of an element.</p></td>
+                </tr>
+                <tr>
+                    <td><mark>::before</mark></td>
+                    <td><p>This element is used to insert something before the content of an element.</p></td>
+                </tr>
+                <tr>
+                    <td><mark>::selection </mark></td>
+                    <td><p>This element is used to select a portion of an element that is selected by a user.</p></td>
+                </tr>
+                <tr>
+                    <td><mark>:first-letter, ::first-letter</mark></td>
+                    <td><p>These two are used to add a special style to the first letter of a text.</p></td>
+                </tr>
+                <tr>
+                    <td><mark>:first-line, ::first-line</mark></td>
+                    <td><p>These two are used to add a special style to the first line of a text.</p></td>
+                </tr>
+            </table>
+            <p class="text-note">Note: The single colon was used when it was still CSS1 and CSS2, then replaced the single colon to double colon when it is already CSS3.</p>
+        </section>
+        
+        <footer class="content-footer">
+            <p>© 2018 All Rights Reserved.</p>
+            <p>Saint Louis University, Baguio City</p>
+            <p>School of Computing and Information Sciences</p>
+            <p>Web Systems and Technologies</p>
+        </footer>
+        
+    </body>
+</html>

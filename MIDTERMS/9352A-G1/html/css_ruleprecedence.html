@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <meta name="viewport" content="initial-scale=1">
+        <meta charset="UTF-8">
+        <title>Webtech 2018</title>
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+        <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    </head>
+    
+    <body>
+        <header>
+        <a href="../index.html"><img src="../img/webtech2.png" alt="Site Logo"></a>
+        
+        <nav>
+            <ul id="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li class="with-dropdown">
+                    <a href="">Prelim</a>
+                    <ul class="menu">
+                        <li><a href="www.html">WWW</a></li>
+                        <li class="side-drop"><a href="http.html">HTTP</a>
+                            <ul class="submenu">
+                                <li><a href="headers.html">HTTP Headers</a></li>
+                                <li><a href="methods.html">HTTP Methods</a></li>
+                                <li><a href="reqresmessages.html">HTTP Request & Response Messages</a></li>
+                            </ul>
+                        </li>
+                        <li class="side-drop"><a href="html.html">HTML</a>
+                            <ul class="submenu">
+                                <li><a href="htmlhistory.html">HTML History</a></li>
+                                <li><a href="xhtml.html">XHTML & HTML</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="with-dropdown">
+                    <a href="">Midterm</a>
+                    <ul class="menu">
+                        <li class="side-drop"><a href="css.html">CSS</a>
+                        <ul class="submenu">
+                            <li><a href="css_statements.html">CSS Statements</a></li>
+                            <li><a href="css_selectors.html">CSS Selectors</a></li>
+                            <li><a href="css_combinators.html">CSS Combinators</a></li>
+                            <li><a href ="css_pseudoclasses_elements.html">CSS Pseudo Classes and Elements</a></li>
+                            <li><a href="css_ruleprecedence.html">CSS Rule Precedence</a></li>
+                            <li><a href="css_declarations.html">CSS Declarations</a></li>
+                            <li><a href="css_pfp.html">CSS Preprocessors, Frameworks and Polyfills</a></li>      
+                        </ul>
+                        </li>
+                        <li><a href="">JavaScript</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="">Finals</a>
+                    <!-- ul class="menu">
+                        <li><a href="">Item1</a></li>
+                        <li><a href="">Item2</a></li>
+                        <li><a href="">Item3</a></li>
+                        <li><a href="">Item4</a></li>
+                    </ul> -->
+                </li>
+
+                <li>
+                    <a href="">Self Assessment</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+        
+        <aside>
+            <h2><span>CSS Rule Precedence</span></h2>
+        </aside>
+
+        <section>
+            <h3>What is Rule Precedence?</h3>
+            <p>An HTML element may be the subject of the selectors of multiple style rules. When such rules target different properties, their effects cascades, and when the styles involve the same property, they conflict, and must be resolved such that only one style is applied.</p>
+        </section>
+        
+        <section>
+            <h3>Resolution:</h3>
+            <ul class = "main-list">
+                <li>by Origin and Importance</li>
+                <p>The <strong class="highlight-text">origin of a declaration</strong> is based on where it comes from and its importance is whenever it is declared important. The precedence of the various origin is in descending order:</p>
+                <ol class = "sub-list">
+                    <li>Transition Declaration</li>
+                    <li>Important user agent declarations</li>
+                    <li>Important user declarations</li>
+                    <li>Import override declarations</li>
+                    <li>Import author declaration</li>
+                    <li>Animation declaration</li>
+                    <li>Normal override declaration</li>
+                    <li>Normal author declaration</li>
+                    <li>Normal author declaration</li>
+                    <li>Normal user agent declaration</li>
+                </ol>
+                <p>Declarations from origins earlier in this list win over declarations from later origins.</p>
+                
+                <li>by Specificity (Calculating a selector’s specificity)</li>
+                <ol class = "sub-list">
+                    <li>count the number of ID selectors in the selector (=a)</li>
+                    <li>count the number of class selectors, attribute selector, pseudo-classes(=b)</li>
+                    <li>count the number of type selectors and pseudo-elements in the selector(=c)</li>
+                    <li>ignore the universal selector</li>
+                </ol>
+                <li>by Order</li>
+                <p>If an element declared twice or more with the same property but different value, the last declaration will be followed.</p>
+<pre>
+p {
+    color: red;
+    color: blue;
+}
+</pre>
+                <p>In the example above, the color of the content of the paragraph will be color blue.</p>
+            </ul>            
+        </section>
+        
+        <footer class="content-footer">
+            <p>© 2018 All Rights Reserved.</p>
+            <p>Saint Louis University, Baguio City</p>
+            <p>School of Computing and Information Sciences</p>
+            <p>Web Systems and Technologies</p>
+        </footer>
+
+    </body>
+</html>

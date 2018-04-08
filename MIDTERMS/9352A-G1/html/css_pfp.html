@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta name="viewport" content="initial-scale=1">
-	<meta charset="UTF-8">
-	<title>Webtech 2018</title>
-	<link rel="stylesheet" type="text/css" href="../styles.css">
-	<link rel="icon" href="../favicon.ico" type="image/x-icon">
-</head>
-<body>
-	<header>
+
+<html lang = "en">
+    <head>
+        <meta name="viewport" content="initial-scale=1">
+        <meta charset="UTF-8">
+        <title>Webtech 2018</title>
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+        <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    </head>
+    
+    <body>
+        <header>
         <a href="../index.html"><img src="../img/webtech2.png" alt="Site Logo"></a>
         
         <nav>
@@ -68,39 +70,37 @@
             </ul>
         </nav>
     </header>
-
-	<aside>
-		<h2><span>HTTP Message Headers</span></h2>
-	</aside>
-    
-    <section>
-        <h3> Message Headers </h3>
-        <ul>
-            <li>  <em> Syntax: FIELD-NAME ":" FIELD-VALUE  </em></li>
-            <li>Four (4) types:
-                <ul>
-                    <li>
-                        <strong>General</strong> - headers applying to both requests and responses but with no relation to the data eventually transmitted in the body.
-                    </li>
-                    <li>
-                        <strong>Entity</strong> - headers containing more information about the body of the entity, like its content length or its MIME-type.
-                    </li>
-                    <li>
-                        <strong>Response</strong> - headers with additional information about the response, like its location or about the server itself (name and version etc.).
-                    </li>
-                    <li>
-                        <strong>Request</strong> - headers containing more information about the resource to be fetched or about the client itself.
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </section>
-
-	<footer class="content-footer">
-		<p>© 2018 All Rights Reserved.</p>
-		<p>Saint Louis University, Baguio City</p>
-		<p>School of Computing and Information Sciences</p>
-		<p>Web Systems and Technologies</p>
-	</footer>
-</body>
+        
+        <aside>
+            <h2><span>CSS Preprocessors, Frameworks and Polyfills</span></h2>
+        </aside>
+        
+        <section>
+            <h3>CSS Preprocessors</h3>
+            <p><strong class="highlight-text">CSS Preprocessors</strong> are designed to be a simple language and it generates CSS using a custom language syntax that typically includes features that don’t exist in pure. SASS, LESS and Stylus are the well-known CSS Preprocessors that you can use. In addition, CSS Preprocessors is its own language built on top of CSS that adds scripting functionality.</p>
+            <figure>
+                <img src="../img/preprocessors.png" width="100%;"  class="center-img"/>
+            </figure>
+        </section>
+        
+        <section>
+            <h3>CSS Frameworks</h3>
+            <p><strong class="highlight-text">CSS Frameworks</strong> is a prewritten style sheet that includes its own layout and theme for user interface elements and it also provides predefined CSS design functionality that can be reused, extended or customized. In addition, CSS Frameworks has a prewritten style for known design elements across the network. The most popular and used frameworks are Bootstrap,  Foundation and Materialize that you should pay a little attention.</p>
+            <figure>
+                <img src="../img/frameworks.png" width="100%;"  class="center-fig"/>
+            </figure>
+        </section>
+        
+        <section>
+            <h3>CSS Polyfills</h3>
+            <p><strong class="highlight-text">Polyfills</strong> shows ways of detecting certain features that cannot be supported by a browser and it provides predefined CSS. </p>
+        </section>
+        
+        <footer class="content-footer">
+            <p>© 2018 All Rights Reserved.</p>
+            <p>Saint Louis University, Baguio City</p>
+            <p>School of Computing and Information Sciences</p>
+            <p>Web Systems and Technologies</p>
+        </footer>
+    </body>
 </html>
