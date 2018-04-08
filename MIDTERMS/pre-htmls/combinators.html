@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <title>CSS</title>
+        <meta name="viewport" content="initial-scale=1" />
+        <meta charset="utf-8" />
+    </head>
+    
+    <body>
+        <section>
+            <h2>CSS Combinators</h2>
+            <p><span class = "highlight-text">Combinators</span> are used to combine a selector to another selector. There are several combinators used in CSS that relies on the relationship between the selectors.</p>
+            <ul class = "main-list">
+                <li>Descendant Combinator</li>
+                <p>The <span class = "highlight-text">descendant combinator</span> targets child elements that are descendant of the parent element. It also includes elements that are not only direct descendants, these elements may be a child, grandchild, grandchild and beyond. Descendant combinator is technically one or more white space.</p>
+                
+                <li>Child Combinator</li>
+                <p>The <span class = "highlight-text">child combinator</span> is quite similar to descendant selector, but it only targets the child element of an element. Elements that are matched in the second selector must be the immediate children of the elements matched in the first selector. Technically, the child combinator is the greater sign (>).</p>
+                
+                <li>Sibling Combinators</li>
+                <p>There are two types of sibling combinators, namely adjacent sibling combinator and general sibling combinator.</p>
+                <ol class = "sub-list">
+                    <li>Adjacent Sibling Combinator</li>
+                    <p>The adjacent sibling combinator allows you to select an element that is directly after another specific element. The adjacent sibling combinator is the plus character (+).</p>
+                        
+                    <li>General Sibling Combinator</li>
+                    <p>The general sibling combinator is almost the same to the adjacent sibling combinator, since it also targets a sibling of a specific element. The only difference is that it may matches all the siblings as long as the hierarchy matches up. The combinator used here is the tilde character (~).</p>
+                </ol>
+            </ul>
+        </section>
+    </body>
+</html>

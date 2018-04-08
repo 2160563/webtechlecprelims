@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <title>CSS</title>
+        <meta name="viewport" content="initial-scale=1" />
+        <meta charset="utf-8" />
+    </head>
+    
+    <body>
+        <section>
+            <h2>CSS Pseudo Classes</h2>
+            <p>A <span class = "highlight-text">pseudo-class</span> is a keyword that included in a selector that defines a special state of the selected element(s). With the help of pseudo-classes, you do not need to use JavaScript to add effects to some selectors. For example, if you want to change a navigation tab’s color when user hovers over it, use the :hover pseudo-class. </p>
+            
+            <h3>Syntax</h3>
+            <p>Here is a simple valid syntax of pseudo-classes:</p>
+            <pre>
+            selector: pseudo-class {
+	           property: value;
+            }
+            </pre>
+            
+            <p>If a CSS class is used with pseudo-classes, the syntax is as follows:</p>
+            <pre>
+            selector.classname:pseudo-class {
+	           property: value
+            }
+            </pre>
+            
+            <h3>List of Pseudo Classes</h3>
+            <p>Here is the list of most used pseudo-classes, and are categorized by its functionality:</p>
+            <ul class = "main-list">
+                <li>Dynamic Pseudo Classes</li>
+                
+                <ul class = "sub-list">
+                    <li>Link pseudo-classes </li>
+                    <h5>:link</h5>
+                    <p>used to add style to unvisited links</p>                    
+                    <h5>:visited</h5> 
+                    <p>used to add style to visited links</p>
+                    
+                    <li>User Action</li>
+                    <h5>:active</h5>
+                    <p>used to add style to an active element</p>
+                    <h5>:hover</h5>
+                    <p>used to add style to an element when a user mouse over it</p>
+                    <h5>:focus</h5>
+                    <p>used to add style to an element while the element has focus</p>
+                </ul>
+                
+                <li>Target Pseudo Classes</li>
+                <h5>:target</h5>
+                <p>used to add style the current active target element</p>
+                
+                <li>Language Pseudo Classes</li>
+                <h5>:lang()</h5>
+                <p>used to specify a language to use in a specified element</p>
+                
+                <li>UI Element Pseudo Classes</li>
+                <h5>:enabled</h5>
+                <p>used to add style to any enabled element. It is only associated with form elements such as input, textarea, select and the like. An element is enabled if it can be activated, means it can be selected, clicked on, typed into, etc. </p>
+                <h5>:disabled</h5>
+                <p>used to add style to any disabled element. This class is vice versa of :enabled pseudo-class, stated above.</p>
+                <h5>:checked</h5>
+                <p>used to add style to any radio, checkbox, or option element that is checked or toggled to an on state. </p>
+                <h5>:indeterminate</h5>
+                <p>used to add style to any form element whose state is indeterminate</p>
+                
+                <li>Structural Pseudo Classes</li>
+                <h5>:root</h5>
+                <p>This class matches the root element of a web document, for example, in HTML, the :root represents the html element. The only difference is that this the :root has higher specificity then the html element. So, it is used to add style to the root element of a document.</p>
+                <h5>:first-child, :last-child, :only-child</h5>
+                <p>used to add style to an element that is the first child of some other element. Same as on the situation of the last child and only child of an element.</p>
+                <h5>:nth-child(), :nth-last-child()</h5>
+                <p>used to add style to at least one element based on their position among a group of sibling elements. The :nth-child and “nth-last-child take an argument that can be a single integer, keywords (“odd” or “even”), or a formula.</p>
+                <p>The :nth-child() targets through elements starting from the top to bottom of a group of siblings. While, the :nth-last-child() starts from the bottom to top. </p>
+                <h5>:first-of-type, :last-of-type, :only-of-type </h5>
+                <p>used to add style the first element of its type among a group of sibling elements. It is quite similar to :nth-child() class, but this class is more specific.</p>
+                <h5>:nth-of-type, :nth-last-of-type</h5>
+                <p>Used to add style to one or more elements of a given type based on their position among a group of sibling elements. This class is quite similar to :nth-last-child() class, but it is more specific.</p>
+                <h5>:empty</h5>
+                <p>Used to add style to any element that has no children. </p>
+                
+                <li>Negation Pseudo Classes</li>
+                <h5>:not()</h5>
+                <p>Used to prevent specific item or element from being selected. For example, you want to change the color of your page to red excluding those values in <p> element, use these rule set:</p>
+                <pre>
+                :not(p) {
+	               color: red;
+                }
+                </pre>
+            </ul>
+        </section>
+    </body>
+</html>

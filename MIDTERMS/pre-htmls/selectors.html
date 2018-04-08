@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <title>CSS</title>
+        <meta name="viewport" content="initial-scale=1" />
+        <meta charset="utf-8" />
+    </head>
+    
+    <body>
+        <section>
+            <h2>CSS Selectors</h2>
+            <p><span class = "highlight-text">CSS Selectors</span> outline the elements to which a set of CSS rules will be applied. A selector is part of the rule set that is being identified before the opening curly brace. If there are elements that have sample style definition, it is advisable to group the selectors so that the code is minimized. </p>
+            
+            <p>Each selector in a group selector is separated using a comma (,). See the examaple below: </p>
+            <pre>
+            h1, h3, h6 {
+                color: green;
+            }
+            </pre>         
+        </section>
+        
+        <section>
+            <h3>Simple Selectors</h3>
+            <p>Here are the brief descriptions of the different type of selectors: </p>
+            <ul class = "main-list">
+                <li>Universal Selector</li>
+                <p>The <span class = "highlight-text">universal selector</span> simply allows in selecting all elements in a page. It is declared using the asterisk (*). Also, universal selector is often used in combination with other elements.</p>
+                <pre>
+                * {
+                    font-size 12px;
+                }
+                </pre>
+                
+                <li>Element Type Selector</li>
+                <p>The <span class = "highlight-text">element type selector</span>, also referred to as <span class = "highlight-text"><strong>“type selector”</strong></span>, must match HTML elements of the same name. Therefore, a selector of section should match all HTML section elements.</p>
+                <pre>
+                section {
+                    background-color: yellow;
+                }
+                </pre>
+                
+                <li>ID Selector</li>
+                <p>The <span class = "highlight-text">ID selector</span> matches any ID attribute providing a same value as of the selector excluding the hashtag symbol. The hashtag or pound symbol (#) is used to declare an ID selector. Note that the value of each ID attribute must be unique.</p>
+                <pre>
+                #menu1 {
+                    background-color: blue;
+                }
+                </pre>
+            
+                <li>Class Selector</li>
+                <p>The <span class = "highlight-text">class selector</span> is declared using a dot preceding a string of one or more characters. It matches all elements on the page that have class attribute with a same value with the class selector excluding the dot. This selector is the most useful of all the CSS selectors.</p>
+                <pre>
+                .main-list {
+                    font-size: 35px;
+                    color: green;
+                }
+                </pre>
+                
+                <li>Attribute Selector</li>
+                <p>The <span class = "highlight-text">attribute selector</span> matches any elements on a web document based on their attributes and attribute values. The syntax for this selector is consists of square brackets ([]) containing an attribute name followed by an optional condition in matching an attribute value. Note that there should be no space before the opening bracket unless the attribute selector is used along with a descendant combinator.</p>
+                <pre>
+                a[href="https://example.com"] {
+                    color: red;
+                }
+                </pre>
+                
+            </ul>
+        </section>
+        
+    </body>
+</html>
