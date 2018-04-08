@@ -9,7 +9,7 @@
 </head>
 <body>
 	<header>
-		<img src="../img/webtech2.png" alt="Site Logo">
+		<a href="../index.html"><img src="../img/webtech2.png" alt="Site Logo"></a>
 
 		<nav>
             <ul id="nav">
@@ -20,11 +20,17 @@
                         <li><a href="www.html">WWW</a></li>
                         <li class="side-drop"><a href="http.html">HTTP</a>
                             <ul class="submenu">
-                                <li><a href="">HTTP Methods</a></li>
-                                <li><a href="">HTTP Definitions</a></li>
+                                <li><a href="headers.html">HTTP Headers</a></li>
+                                <li><a href="methods.html">HTTP Methods</a></li>
+                                <li><a href="reqresmessages.html">HTTP Request & Response Messages</a></li>
                             </ul>
                         </li>
-                        <li><a href="">HTML</a></li>
+                        <li class="side-drop"><a href="html.html">HTML</a>
+                            <ul class="submenu">
+                                <li><a href="htmlhistory.html">HTML History</a></li>
+                                <li><a href="xhtml.html">XHTML & HTML</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
 
@@ -134,60 +140,6 @@
             </li>
             <li>
                 <strong>Fragment identifier</strong> - subsection in a document, hash sign (#) symbol.
-            </li>
-        </ul>
-    </section>
-    
-	<section id="dns">
-        <h3> Request Message </h3>
-        <ul>
-            <li>The request message from the client to the server</li>
-            <li> <strong> First line: Request Line </strong>
-                <ul>
-                    <li> <em> Syntax: METHOD_TARGET_PROTOCOL </em> </li>
-                            
-                    <li>
-                        <b> Note: </b> Please keep in mind that the underscores (_) are considered as SP or spaces to separate the codes from one another.
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </section> 
-
-    <section>
-        <h3> Response Message </h3>
-        <ul>
-            <li>  
-                After the request message has been sent and interpreted, the server will now respond with an HTTP response message
-            </li>
-            <li>  <strong> First line: Response Line </strong>
-                <ul>
-                    <li> <em> Syntax: PROTOCOL_STATUSCODE_TEXTUALPHRASE </em> 
-                    </li>
-                    <li>
-                        <b> Note: </b> Please keep in mind that the underscores (_) are considered as SP or spaces to separate the codes from one another.
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </section>   
-
-    <section>
-        <h3> Message Headers </h3>
-        <ul>
-            <li>  <em> Syntax: FIELD-NAME ":" FIELD-VALUE  </em></li>
-            <li>Three (3) types:
-                <ul>
-                    <li>
-                        <strong>General</strong> - related to the characteristics itself.
-                    </li>
-                    <li>
-                        <strong>Entity</strong> - characteristics of the body
-                    </li>
-                    <li>
-                        <strong>Response</strong>
-                    </li>
-                </ul>
             </li>
         </ul>
     </section>

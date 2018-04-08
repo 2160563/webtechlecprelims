@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Webtech 2018</title>
+	<link rel="stylesheet" type="text/css" href="../styles.css">
+	<link rel="icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<header>
+		<a href="../index.html"><img src="../img/webtech2.png" alt="Site Logo"></a>
+
+		<nav>
+            <ul id="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li class="with-dropdown">
+                    <a href="">Prelim</a>
+                    <ul class="menu">
+                        <li><a href="www.html">WWW</a></li>
+                        <li class="side-drop"><a href="http.html">HTTP</a>
+                            <ul class="submenu">
+                                <li><a href="headers.html">HTTP Headers</a></li>
+                                <li><a href="methods.html">HTTP Methods</a></li>
+                                <li><a href="reqresmessages.html">HTTP Request & Response Messages</a></li>
+                            </ul>
+                        </li>
+                        <li class="side-drop"><a href="html.html">HTML</a>
+                            <ul class="submenu">
+                                <li><a href="htmlhistory.html">HTML History</a></li>
+                                <li><a href="xhtml.html">XHTML & HTML</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="with-dropdown">
+                    <a href="">Midterm</a>
+                    <ul class="menu">
+                        <li><a href="">Item1</a></li>
+                        <li><a href="">Item2</a></li>
+                        <li><a href="">Item3</a></li>
+                        <li><a href="">Item4</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="">Finals</a>
+                    <!-- ul class="menu">
+                        <li><a href="">Item1</a></li>
+                        <li><a href="">Item2</a></li>
+                        <li><a href="">Item3</a></li>
+                        <li><a href="">Item4</a></li>
+                    </ul> -->
+                </li>
+
+                <li>
+                    <a href="">Self Assessment</a>
+                </li>
+            </ul>
+        </nav>
+	</header>
+
+	<aside>
+		<h2><span>HTTP Message Headers</span></h2>
+	</aside>
+    
+    <section>
+        <h3> Message Headers </h3>
+        <ul>
+            <li>  <em> Syntax: FIELD-NAME ":" FIELD-VALUE  </em></li>
+            <li>Three (3) types:
+                <ul>
+                    <li>
+                        <strong>General</strong> - headers applying to both requests and responses but with no relation to the data eventually transmitted in the body.
+                    </li>
+                    <li>
+                        <strong>Entity</strong> - headers containing more information about the body of the entity, like its content length or its MIME-type.
+                    </li>
+                    <li>
+                        <strong>Response</strong> - headers with additional information about the response, like its location or about the server itself (name and version etc.).
+                    </li>
+                    <li>
+                        <strong>Request</strong> - headers containing more information about the resource to be fetched or about the client itself.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+	<footer class="content-footer">
+		<p>© 2018 All Rights Reserved.</p>
+		<p>Saint Louis University, Baguio City</p>
+		<p>School of Computing and Information Sciences</p>
+		<p>Web Systems and Technologies</p>
+	</footer>
+</body>
+</html>
