@@ -76,59 +76,52 @@
             </nav>
 
         </header>
-        
+            
         <aside>
-            <h2><span>CSS Combinators</span></h2>
+            <h2><span>Basic JS Building Blocks</span></h2>
         </aside>
         
         <section>
-            <h3>What are Combinators?</h3>
-            <p><strong class = "highlight-text">Combinators</strong> are used to combine a selector to another selector. There are several combinators used in CSS that relies on the relationship between the selectors.</p>
-            <ul class = "main-list">
-                <li>Descendant Combinator
-                <p>The <strong class = "highlight-text">descendant combinator</strong> targets child elements that are descendant of the parent element. It also includes elements that are not only direct descendants, these elements may be a child, grandchild, grandchild and beyond. Descendant combinator is technically one or more white space.</p>
-                
-<pre>
-ul.main-list li {
-    color: red;
+            <ol class="main-list">
+                <li>Conditionals</li>
+                <p>As with any other programming languages, decision making capabilities are a necessity. This is basically how they control the flow of the program. JavaScript has such a simple function.</p>
+<pre class="pre-dif">
+&lt;script language = "JavaScript"&gt;
+var first_name = "Luger";
+
+if (first_name == "Denmark") {
+    document.write("First IF " +first_name);
+}
+else if (first_name == "Jasper") {
+    document.write("Second IF " + first_name);
+}
+else if (first_name == "Dom") {
+    document.write("Third IF " +first_name);
+}
+else {
+    document.write("ELSE PART " + first_name);
+}
+&lt;/script&gt;
+</pre>
+                <li>Looping</li>
+                <p><strong class = "highlight-text">Looping</strong> is something that you need when you want something done more than once, JS obviously supports this kind of capability.</p>
+<pre class="pre-dif">
+//for loop
+for (var i = 0; i < 20; i++) {
+    alert(i);
+}
+
+//while loop
+var n = 1;
+while (n < 5) {
+    console.log("Looping");
+    n++;
 }
 </pre>
-                </li>
-                
-                <li>Child Combinator
-                <p>The <strong class = "highlight-text">child combinator</strong> is quite similar to descendant selector, but it only targets the child element of an element. Elements that are matched in the second selector must be the immediate children of the elements matched in the first selector. Technically, the child combinator is the greater sign (>).</p>
-                
-<pre>
-ul.main-list li > a {
-    margin: 5px;
-}
-</pre>
-                </li>                
-                <li>Sibling Combinators
-                <p>There are two types of sibling combinators, namely adjacent sibling combinator and general sibling combinator.</p>
-                
-                    <ul class = "sub-list">
-                        <li>Adjacent Sibling Combinator
-                        <p>The adjacent sibling combinator allows you to select an element that is directly after another specific element. The adjacent sibling combinator is the plus character (+).</p>
-                        
-<pre>
-section + p {
-    font-size: 30px;
-}
-</pre>
-                        </li>
-                            
-                        <li>General Sibling Combinator
-                        <p>The general sibling combinator is almost the same to the adjacent sibling combinator, since it also targets a sibling of a specific element. The only difference is that it may matches all the siblings as long as the hierarchy matches up. The combinator used here is the tilde character (~).</p>                        
-<pre>
-section ~ strong {
-    text-decoration: underline;
- }
-</pre>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+                <li>Functions</li>
+                <p><strong class = "highlight-text">Functions</strong> can be considered as the definitive element of JavaScript. They are code written in a single block of code which is designed to perform a specific task. In Java terms, they are a bit similar to methods but are a bit more flexible.</p>
+                <p>Functions can be easily called to do its required tasks. They can also be defined by the users themselves.</p>
+            </ol>
         </section>
         
         <footer class="content-footer">
@@ -137,6 +130,5 @@ section ~ strong {
             <p>School of Computing and Information Sciences</p>
             <p>Web Systems and Technologies</p>
         </footer>
-        
     </body>
 </html>

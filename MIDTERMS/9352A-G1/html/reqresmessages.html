@@ -1,186 +1,194 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-	<meta name="viewport" content="initial-scale=1">
-	<meta charset="UTF-8">
-	<title>Webtech 2018</title>
-	<link rel="stylesheet" type="text/css" href="../styles.css">
-	<link rel="icon" href="../favicon.ico" type="image/x-icon">
-</head>
-<body>
-	<header>
-        <a href="../index.html"><img src="../img/webtech2.png" alt="Site Logo"></a>
-        
-        <nav>
-            <ul id="nav">
-                <li><a href="../index.html">Home</a></li>
-                <li class="with-dropdown">
-                    <a href="">Prelim</a>
-                    <ul class="menu">
-                        <li><a href="www.html">WWW</a></li>
-                        <li class="side-drop"><a href="http.html">HTTP</a>
-                            <ul class="submenu">
-                                <li><a href="headers.html">HTTP Headers</a></li>
-                                <li><a href="methods.html">HTTP Methods</a></li>
-                                <li><a href="reqresmessages.html">HTTP Request & Response Messages</a></li>
-                            </ul>
-                        </li>
-                        <li class="side-drop"><a href="html.html">HTML</a>
-                            <ul class="submenu">
-                                <li><a href="htmlhistory.html">HTML History</a></li>
-                                <li><a href="xhtml.html">XHTML & HTML</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="with-dropdown">
-                    <a href="">Midterm</a>
-                    <ul class="menu">
-                        <li class="side-drop"><a href="css.html">CSS</a>
-                        <ul class="submenu">
-                            <li><a href="css_statements.html">CSS Statements</a></li>
-                            <li><a href="css_selectors.html">CSS Selectors</a></li>
-                            <li><a href="css_combinators.html">CSS Combinators</a></li>
-                            <li><a href ="css_pseudoclasses_elements.html">CSS Pseudo Classes and Elements</a></li>
-                            <li><a href="css_ruleprecedence.html">CSS Rule Precedence</a></li>
-                            <li><a href="css_declarations.html">CSS Declarations</a></li>
-                            <li><a href="css_pfp.html">CSS Preprocessors, Frameworks and Polyfills</a></li>      
+    <head>
+        <meta name="viewport" content="initial-scale=1">
+        <meta charset="UTF-8">
+        <title>Webtech 2018</title>
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+        <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <a href="../index.html"><img src="../img/webtech2.png" alt="Site Logo"></a>
+            
+            <nav>
+                <ul id="nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="with-dropdown">
+                        <a href="">Prelim</a>
+                        <ul class="menu">
+                            <li><a href="www.html">WWW</a></li>
+                            <li class="side-drop"><a href="http.html">HTTP</a>
+                                <ul class="submenu">
+                                    <li><a href="headers.html">HTTP Headers</a></li>
+                                    <li><a href="methods.html">HTTP Methods</a></li>
+                                    <li><a href="reqresmessages.html">HTTP Request & Response Messages</a></li>
+                                </ul>
+                            </li>
+                            <li class="side-drop"><a href="html.html">HTML</a>
+                                <ul class="submenu">
+                                    <li><a href="htmlhistory.html">HTML History</a></li>
+                                    <li><a href="xhtml.html">XHTML & HTML</a></li>
+                                </ul>
+                            </li>
                         </ul>
+                    </li>
+
+                    <li class="with-dropdown">
+                        <a href="">Midterm</a>
+                        <ul class="menu">
+                            <li class="side-drop"><a href="css.html">CSS</a>
+                            <ul class="submenu">
+                                <li><a href="css_statements.html">CSS Statements</a></li>
+                                <li><a href="css_selectors.html">CSS Selectors</a></li>
+                                <li><a href="css_combinators.html">CSS Combinators</a></li>
+                                <li><a href ="css_pseudoclasses_elements.html">CSS Pseudo Classes and Elements</a></li>
+                                <li><a href="css_ruleprecedence.html">CSS Rule Precedence</a></li>
+                                <li><a href="css_declarations.html">CSS Declarations</a></li>
+                                <li><a href="css_pfp.html">CSS Preprocessors, Frameworks and Polyfills</a></li>      
+                            </ul>
+                            </li>
+                            <li class="side-drop"><a href="js.html">JavaScript</a>
+                                <ul class="submenu">
+                                    <li><a href = "js_blocks.html">Basic JS Building Blocks</a></li>
+                                    <li><a href = "js_exec_env.html">Client-Side Execution Environment</a></li>
+                                    <li><a href = "dom.html">Document Object Model (DOM)</a></li>                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="404.html">Finals</a>
+                        <!-- ul class="menu">
+                            <li><a href="">Item1</a></li>
+                            <li><a href="">Item2</a></li>
+                            <li><a href="">Item3</a></li>
+                            <li><a href="">Item4</a></li>
+                        </ul> -->
+                    </li>
+
+                    <li>
+                        <a href="404.html">Self Assessment</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+    	<aside>
+    		<h2><span>HTTP Request & Response Messages</span></h2>
+    	</aside>
+        
+    	<section>
+            <h3> Request Message </h3>
+            <ul>
+                <li>The request message from the client to the server</li>
+                <li> <strong> First line: Request Line </strong>
+                    <ul>
+                        <li> <em> Syntax: METHOD_TARGET_PROTOCOL </em> </li>
+                                
+                        <li>
+                            <b> Note: </b> Please keep in mind that the underscores (_) are considered as SP or spaces to separate the codes from one another.
                         </li>
-                        <li><a href="">JavaScript</a></li>
                     </ul>
-                </li>
-
-                <li>
-                    <a href="">Finals</a>
-                    <!-- ul class="menu">
-                        <li><a href="">Item1</a></li>
-                        <li><a href="">Item2</a></li>
-                        <li><a href="">Item3</a></li>
-                        <li><a href="">Item4</a></li>
-                    </ul> -->
-                </li>
-
-                <li>
-                    <a href="">Self Assessment</a>
                 </li>
             </ul>
-        </nav>
-    </header>
 
-	<aside>
-		<h2><span>HTTP Request & Response Messages</span></h2>
-	</aside>
-    
-	<section>
-        <h3> Request Message </h3>
-        <ul>
-            <li>The request message from the client to the server</li>
-            <li> <strong> First line: Request Line </strong>
-                <ul>
-                    <li> <em> Syntax: METHOD_TARGET_PROTOCOL </em> </li>
-                            
-                    <li>
-                        <b> Note: </b> Please keep in mind that the underscores (_) are considered as SP or spaces to separate the codes from one another.
-                    </li>
-                </ul>
-            </li>
-        </ul>
+            <pre>
+                GET /doc/home.html HTTP/1.1
+                Host: www.webtek.org
+                Accept: image/gif, image/jpeg, */*
+                Accept-Language: en-us
+                Accept-Encoding: gzip, deflate
+                User-Agent: Mozilla/4.0
+                Content-Length: 35</pre>
+        </section> 
 
-        <pre>
-            GET /doc/home.html HTTP/1.1
-            Host: www.webtek.org
-            Accept: image/gif, image/jpeg, */*
-            Accept-Language: en-us
-            Accept-Encoding: gzip, deflate
-            User-Agent: Mozilla/4.0
-            Content-Length: 35</pre>
-    </section> 
+        <section>
+            <h3> Response Message </h3>
+            <ul>
+                <li>  
+                    After the request message has been sent and interpreted, the server will now respond with an HTTP response message
+                </li>
+                <li>  <strong> First line: Response Line </strong>
+                    <ul>
+                        <li> <em> Syntax: PROTOCOL_STATUSCODE_TEXTUALPHRASE </em> 
+                        </li>
+                        <li>
+                            <b> Note: </b> Please keep in mind that the underscores (_) are considered as SP or spaces to separate the codes from one another.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
 
-    <section>
-        <h3> Response Message </h3>
-        <ul>
-            <li>  
-                After the request message has been sent and interpreted, the server will now respond with an HTTP response message
-            </li>
-            <li>  <strong> First line: Response Line </strong>
-                <ul>
-                    <li> <em> Syntax: PROTOCOL_STATUSCODE_TEXTUALPHRASE </em> 
-                    </li>
-                    <li>
-                        <b> Note: </b> Please keep in mind that the underscores (_) are considered as SP or spaces to separate the codes from one another.
-                    </li>
-                </ul>
-            </li>
-        </ul>
+            <pre>
+                HTTP/1.1 200 OK
+                Date: Sun, 04 March 2018 08:18:14 GMT
+                Server: Apache/1.3.29 (Win32)
+                Last-Modified: Sat, 24 Feb 2018
+                ETag: "0-23-4024c3a5"
+                Accept-Ranges: bytes
+                Content-Length: 35
+                Connection: close
+                Content-Type: text/html</pre>
+        </section>   
 
-        <pre>
-            HTTP/1.1 200 OK
-            Date: Sun, 04 March 2018 08:18:14 GMT
-            Server: Apache/1.3.29 (Win32)
-            Last-Modified: Sat, 24 Feb 2018
-            ETag: "0-23-4024c3a5"
-            Accept-Ranges: bytes
-            Content-Length: 35
-            Connection: close
-            Content-Type: text/html</pre>
-    </section>   
+        <section>
+            <h3> Status Codes </h3>
+            <table class="stat-codes">
+                <tr>
+                    <th> Informational (1XX) </th>
+                    <th> Success (2XX) </th>
+                    <th> Redirection (3XX) </th>
+                    <th> Client Error (4XX) </th>
+                    <th> Server Error (5XX) </th>
+                </tr>
+                <tr>
+                    <td> 100 Continue </td>
+                    <td> 200 OK </td>
+                    <td> 300 Multiple Choices </td>
+                    <td> 400 Bad Request </td>
+                    <td> 500 Internal Server Error </td>
+                </tr>
+                <tr>
+                    <td> 101 Switching Protocols </td>
+                    <td> 201 Created </td>
+                    <td> 301 Moved Permanently </td>
+                    <td> 401 Unauthorized </td>
+                    <td> 501 Not Implemented </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> 202 Accepted </td>
+                    <td> 302 Found </td>
+                    <td> 402 Payment Required </td>
+                    <td> 502 Bad Gateway </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> 203 Non-authoritative Info </td>
+                    <td> 303 See other </td>
+                    <td> 403 Forbidden </td>
+                    <td> 503 Service unavailable </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> 204 No Content </td>
+                    <td> 304 Not Modified </td>
+                    <td> 404 Not Found </td>
+                    <td> 504 Gateway Timeout </td>
+                </tr>
+            </table>
+            <h4> Other status codes are available <strong><a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html" target="_blank"> here. </a></strong> </h4>
+        </section>
 
-    <section>
-        <h3> Status Codes </h3>
-        <table class="stat-codes">
-            <tr>
-                <th> Informational (1XX) </th>
-                <th> Success (2XX) </th>
-                <th> Redirection (3XX) </th>
-                <th> Client Error (4XX) </th>
-                <th> Server Error (5XX) </th>
-            </tr>
-            <tr>
-                <td> 100 Continue </td>
-                <td> 200 OK </td>
-                <td> 300 Multiple Choices </td>
-                <td> 400 Bad Request </td>
-                <td> 500 Internal Server Error </td>
-            </tr>
-            <tr>
-                <td> 101 Switching Protocols </td>
-                <td> 201 Created </td>
-                <td> 301 Moved Permanently </td>
-                <td> 401 Unauthorized </td>
-                <td> 501 Not Implemented </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td> 202 Accepted </td>
-                <td> 302 Found </td>
-                <td> 402 Payment Required </td>
-                <td> 502 Bad Gateway </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td> 203 Non-authoritative Info </td>
-                <td> 303 See other </td>
-                <td> 403 Forbidden </td>
-                <td> 503 Service unavailable </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td> 204 No Content </td>
-                <td> 304 Not Modified </td>
-                <td> 404 Not Found </td>
-                <td> 504 Gateway Timeout </td>
-            </tr>
-        </table>
-        <h4> Other status codes are available <strong><a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html" target="_blank"> here. </a></strong> </h4>
-    </section>
-
-	<footer class="content-footer">
-		<p>© 2018 All Rights Reserved.</p>
-		<p>Saint Louis University, Baguio City</p>
-		<p>School of Computing and Information Sciences</p>
-		<p>Web Systems and Technologies</p>
-	</footer>
-</body>
+    	<footer class="content-footer">
+    		<p>© 2018 All Rights Reserved.</p>
+    		<p>Saint Louis University, Baguio City</p>
+    		<p>School of Computing and Information Sciences</p>
+    		<p>Web Systems and Technologies</p>
+    	</footer>
+    </body>
 </html>

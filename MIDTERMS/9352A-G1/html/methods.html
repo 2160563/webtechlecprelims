@@ -1,164 +1,172 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-	<meta name="viewport" content="initial-scale=1">
-	<meta charset="UTF-8">
-	<title>Webtech 2018</title>
-	<link rel="stylesheet" type="text/css" href="../styles.css">
-	<link rel="icon" href="../favicon.ico" type="image/x-icon">
-</head>
-<body>
-	<header>
-        <a href="../index.html"><img src="../img/webtech2.png" alt="Site Logo"></a>
-        
-        <nav>
-            <ul id="nav">
-                <li><a href="../index.html">Home</a></li>
-                <li class="with-dropdown">
-                    <a href="">Prelim</a>
-                    <ul class="menu">
-                        <li><a href="www.html">WWW</a></li>
-                        <li class="side-drop"><a href="http.html">HTTP</a>
-                            <ul class="submenu">
-                                <li><a href="headers.html">HTTP Headers</a></li>
-                                <li><a href="methods.html">HTTP Methods</a></li>
-                                <li><a href="reqresmessages.html">HTTP Request & Response Messages</a></li>
-                            </ul>
-                        </li>
-                        <li class="side-drop"><a href="html.html">HTML</a>
-                            <ul class="submenu">
-                                <li><a href="htmlhistory.html">HTML History</a></li>
-                                <li><a href="xhtml.html">XHTML & HTML</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="with-dropdown">
-                    <a href="">Midterm</a>
-                    <ul class="menu">
-                        <li class="side-drop"><a href="css.html">CSS</a>
-                        <ul class="submenu">
-                            <li><a href="css_statements.html">CSS Statements</a></li>
-                            <li><a href="css_selectors.html">CSS Selectors</a></li>
-                            <li><a href="css_combinators.html">CSS Combinators</a></li>
-                            <li><a href ="css_pseudoclasses_elements.html">CSS Pseudo Classes and Elements</a></li>
-                            <li><a href="css_ruleprecedence.html">CSS Rule Precedence</a></li>
-                            <li><a href="css_declarations.html">CSS Declarations</a></li>
-                            <li><a href="css_pfp.html">CSS Preprocessors, Frameworks and Polyfills</a></li>      
+    <head>
+        <meta name="viewport" content="initial-scale=1">
+        <meta charset="UTF-8">
+        <title>Webtech 2018</title>
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+        <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <a href="../index.html"><img src="../img/webtech2.png" alt="Site Logo"></a>
+            
+            <nav>
+                <ul id="nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="with-dropdown">
+                        <a href="">Prelim</a>
+                        <ul class="menu">
+                            <li><a href="www.html">WWW</a></li>
+                            <li class="side-drop"><a href="http.html">HTTP</a>
+                                <ul class="submenu">
+                                    <li><a href="headers.html">HTTP Headers</a></li>
+                                    <li><a href="methods.html">HTTP Methods</a></li>
+                                    <li><a href="reqresmessages.html">HTTP Request & Response Messages</a></li>
+                                </ul>
+                            </li>
+                            <li class="side-drop"><a href="html.html">HTML</a>
+                                <ul class="submenu">
+                                    <li><a href="htmlhistory.html">HTML History</a></li>
+                                    <li><a href="xhtml.html">XHTML & HTML</a></li>
+                                </ul>
+                            </li>
                         </ul>
+                    </li>
+
+                    <li class="with-dropdown">
+                        <a href="">Midterm</a>
+                        <ul class="menu">
+                            <li class="side-drop"><a href="css.html">CSS</a>
+                            <ul class="submenu">
+                                <li><a href="css_statements.html">CSS Statements</a></li>
+                                <li><a href="css_selectors.html">CSS Selectors</a></li>
+                                <li><a href="css_combinators.html">CSS Combinators</a></li>
+                                <li><a href ="css_pseudoclasses_elements.html">CSS Pseudo Classes and Elements</a></li>
+                                <li><a href="css_ruleprecedence.html">CSS Rule Precedence</a></li>
+                                <li><a href="css_declarations.html">CSS Declarations</a></li>
+                                <li><a href="css_pfp.html">CSS Preprocessors, Frameworks and Polyfills</a></li>      
+                            </ul>
+                            </li>
+                            <li class="side-drop"><a href="js.html">JavaScript</a>
+                                <ul class="submenu">
+                                    <li><a href = "js_blocks.html">Basic JS Building Blocks</a></li>
+                                    <li><a href = "js_exec_env.html">Client-Side Execution Environment</a></li>
+                                    <li><a href = "dom.html">Document Object Model (DOM)</a></li>                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="404.html">Finals</a>
+                        <!-- ul class="menu">
+                            <li><a href="">Item1</a></li>
+                            <li><a href="">Item2</a></li>
+                            <li><a href="">Item3</a></li>
+                            <li><a href="">Item4</a></li>
+                        </ul> -->
+                    </li>
+
+                    <li>
+                        <a href="404.html">Self Assessment</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+    	<aside>
+    		<h2><span>HTTP Methods</span></h2>
+    	</aside>
+    	
+        <section>
+            <h3>Method Definitions</h3>
+            <ul>
+                <li> 
+                    <strong>Safe Methods</strong>
+                    <ul>
+                        <li>
+                            is a <strong> read-only </strong> file. It does not take any othre action other than retrieval.
                         </li>
-                        <li><a href="">JavaScript</a></li>
+                        <li>
+                            this only uses the <em>GET, HEAD, OPTIONS &, TRACE </em> methods.
+                        </li>
                     </ul>
                 </li>
-
-                <li>
-                    <a href="">Finals</a>
-                    <!-- ul class="menu">
-                        <li><a href="">Item1</a></li>
-                        <li><a href="">Item2</a></li>
-                        <li><a href="">Item3</a></li>
-                        <li><a href="">Item4</a></li>
-                    </ul> -->
+                <li> 
+                    <strong>Idempotent Methods</strong>
+                    <ul>
+                        <li>
+                            even if the methods get repeated, it will <strong>always result to the same output.</strong>
+                        </li>
+                        <li>
+                            this method uses the <em>GET, HEAD, OPTIONS , PUT, DELETE &, TRACE </em> methods.
+                        </li>
+                    </ul>
                 </li>
-
-                <li>
-                    <a href="">Self Assessment</a>
+                <li> 
+                    <strong>Cacheable Methods</strong>
+                    <ul>
+                        <li>
+                            storage that is accessible to the client to be stored for future use.
+                        </li>
+                        <li>
+                            this method can also save up bandwidth.
+                        </li>
+                        <li>
+                            this method only uses the <em>GET, HEAD &, POST </em> methods.
+                        </li>
+                    </ul>
+                </li>
+                <li> 
+                    <strong>Standard Methods</strong>
+                    <ul>
+                        <li>
+                            <strong>GET</strong>
+                            - must be supported by every server. It retrieves whatever information is identified by the Request-URI.
+                        </li>
+                        <li>
+                            <strong>HEAD</strong>
+                            - must be supported by every server. It is identical to the GET method except that the server must not return a message-body in response. Also, it is used to retrieve meta data.
+                        </li>
+                        <li>
+                            <strong>POST</strong>
+                            - is used to make changes in the target resource. It performs resource and specific processing. Enclosed as the message body.
+                        </li>
+                        <li>
+                            <strong>PUT</strong> 
+                            - generates a resource
+                            <p> <em> * this method is not supported by default and is difficult to implement </em></p>
+                        </li>
+                        <li>
+                            <strong>DELETE</strong> 
+                            - removes a resource
+                            <p> <em> * this method is not supported by default and is difficult to implement </em></p>
+                        </li>
+                        <li>
+                            <strong>OPTIONS</strong> 
+                                    - tells what you can do to the resource.
+                        </li>
+                        <li>
+                            <strong>TRACE</strong>
+                            - allows the server to echo the request.
+                        </li>
+                        <li>
+                            <strong>CONNECT</strong>
+                                    - create a secure connection and establish a tunnel.
+                        </li>
+                    </ul>
                 </li>
             </ul>
-        </nav>
-    </header>
+        </section>
 
-	<aside>
-		<h2><span>HTTP Methods</span></h2>
-	</aside>
-	
-    <section>
-        <h3>Method Definitions</h3>
-        <ul>
-            <li> 
-                <strong>Safe Methods</strong>
-                <ul>
-                    <li>
-                        is a <strong> read-only </strong> file. It does not take any othre action other than retrieval.
-                    </li>
-                    <li>
-                        this only uses the <em>GET, HEAD, OPTIONS &, TRACE </em> methods.
-                    </li>
-                </ul>
-            </li>
-            <li> 
-                <strong>Idempotent Methods</strong>
-                <ul>
-                    <li>
-                        even if the methods get repeated, it will <strong>always result to the same output.</strong>
-                    </li>
-                    <li>
-                        this method uses the <em>GET, HEAD, OPTIONS , PUT, DELETE &, TRACE </em> methods.
-                    </li>
-                </ul>
-            </li>
-            <li> 
-                <strong>Cacheable Methods</strong>
-                <ul>
-                    <li>
-                        storage that is accessible to the client to be stored for future use.
-                    </li>
-                    <li>
-                        this method can also save up bandwidth.
-                    </li>
-                    <li>
-                        this method only uses the <em>GET, HEAD &, POST </em> methods.
-                    </li>
-                </ul>
-            </li>
-            <li> 
-                <strong>Standard Methods</strong>
-                <ul>
-                    <li>
-                        <strong>GET</strong>
-                        - must be supported by every server. It retrieves whatever information is identified by the Request-URI.
-                    </li>
-                    <li>
-                        <strong>HEAD</strong>
-                        - must be supported by every server. It is identical to the GET method except that the server must not return a message-body in response. Also, it is used to retrieve meta data.
-                    </li>
-                    <li>
-                        <strong>POST</strong>
-                        - is used to make changes in the target resource. It performs resource and specific processing. Enclosed as the message body.
-                    </li>
-                    <li>
-                        <strong>PUT</strong> 
-                        - generates a resource
-                        <p> <em> * this method is not supported by default and is difficult to implement </em></p>
-                    </li>
-                    <li>
-                        <strong>DELETE</strong> 
-                        - removes a resource
-                        <p> <em> * this method is not supported by default and is difficult to implement </em></p>
-                    </li>
-                    <li>
-                        <strong>OPTIONS</strong> 
-                                - tells what you can do to the resource.
-                    </li>
-                    <li>
-                        <strong>TRACE</strong>
-                        - allows the server to echo the request.
-                    </li>
-                    <li>
-                        <strong>CONNECT</strong>
-                                - create a secure connection and establish a tunnel.
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </section>
-
-	<footer class="content-footer">
-		<p>© 2018 All Rights Reserved.</p>
-		<p>Saint Louis University, Baguio City</p>
-		<p>School of Computing and Information Sciences</p>
-		<p>Web Systems and Technologies</p>
-	</footer>
-</body>
+    	<footer class="content-footer">
+    		<p>© 2018 All Rights Reserved.</p>
+    		<p>Saint Louis University, Baguio City</p>
+    		<p>School of Computing and Information Sciences</p>
+    		<p>Web Systems and Technologies</p>
+    	</footer>
+    </body>
 </html>

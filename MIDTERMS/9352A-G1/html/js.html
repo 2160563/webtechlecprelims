@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang = "en">
     <head>
         <meta name="viewport" content="initial-scale=1">
         <meta charset="UTF-8">
@@ -8,10 +8,11 @@
         <link rel="stylesheet" type="text/css" href="../styles.css">
         <link rel="icon" href="../favicon.ico" type="image/x-icon">
     </head>
+    
     <body>
         <header>
-            <a href="../index.html"><img src="../img/webtech2.png" alt="Site Logo"></a>
-            
+            <a href = "../index.html"><img src="../img/webtech2.png" alt="Site Logo"></a>
+
             <nav>
                 <ul id="nav">
                     <li><a href="../index.html">Home</a></li>
@@ -74,61 +75,33 @@
                     </li>
                 </ul>
             </nav>
-
+            
         </header>
-        
+            
         <aside>
-            <h2><span>CSS Combinators</span></h2>
+            <h2><span>JavaScript</span></h2>
         </aside>
         
         <section>
-            <h3>What are Combinators?</h3>
-            <p><strong class = "highlight-text">Combinators</strong> are used to combine a selector to another selector. There are several combinators used in CSS that relies on the relationship between the selectors.</p>
-            <ul class = "main-list">
-                <li>Descendant Combinator
-                <p>The <strong class = "highlight-text">descendant combinator</strong> targets child elements that are descendant of the parent element. It also includes elements that are not only direct descendants, these elements may be a child, grandchild, grandchild and beyond. Descendant combinator is technically one or more white space.</p>
-                
-<pre>
-ul.main-list li {
-    color: red;
-}
-</pre>
-                </li>
-                
-                <li>Child Combinator
-                <p>The <strong class = "highlight-text">child combinator</strong> is quite similar to descendant selector, but it only targets the child element of an element. Elements that are matched in the second selector must be the immediate children of the elements matched in the first selector. Technically, the child combinator is the greater sign (>).</p>
-                
-<pre>
-ul.main-list li > a {
-    margin: 5px;
-}
-</pre>
-                </li>                
-                <li>Sibling Combinators
-                <p>There are two types of sibling combinators, namely adjacent sibling combinator and general sibling combinator.</p>
-                
-                    <ul class = "sub-list">
-                        <li>Adjacent Sibling Combinator
-                        <p>The adjacent sibling combinator allows you to select an element that is directly after another specific element. The adjacent sibling combinator is the plus character (+).</p>
-                        
-<pre>
-section + p {
-    font-size: 30px;
-}
-</pre>
-                        </li>
-                            
-                        <li>General Sibling Combinator
-                        <p>The general sibling combinator is almost the same to the adjacent sibling combinator, since it also targets a sibling of a specific element. The only difference is that it may matches all the siblings as long as the hierarchy matches up. The combinator used here is the tilde character (~).</p>                        
-<pre>
-section ~ strong {
-    text-decoration: underline;
- }
-</pre>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+            <h3>What is JavaScript?</h3>
+            <figure class="left-img">
+                <img src="../img/js.png" alt = "JavaScript Logo" width="20%" />
+            </figure>
+            <figure class="right-fig">
+                <img src = "../img/eich.jpg" alt="Brendan Eich" width="170%" />
+                <figcaption>Brendan Eich</figcaption>
+            </figure>
+            <p><strong class="highlight-text">JavaScipt</strong> is a client-side scripting language used to add interactivity to html and css files. It was created by <strong><a href="https://en.wikipedia.org/wiki/Brendan_Eich">Brendan Eich</a></strong> in 1995. JavaScript was originally developed under the name <strong class ="highlight-text"><i>"Mocha"</i></strong> but to jump onto the ‘Java’ bandwagon the developers decided to replace it with the name ‘JavaScript’.</p>            
+            <p>Using JavaScript, complex functionality can be implemented on a website. Along with HTML and CSS, JavaScript is used to build interactive and responsive menus, maps, and other things for user interaction. Some of the website that accept variable text like in login, signup and registration uses JavaScript. Also, JavaScript is used for validating data, creating cookies, and detecting user's browser.</p>            
+        </section>
+        
+        <section>
+            <h3>How JavaScript works?</h3>
+            <ol>
+                <li>When the browser loads the website resources, it will fetch the pages with js code whether it is embedded onto a html file or on a separate <mark class="mark-highlight">.js</mark> file.</li>
+                <li>Afterwards, the js code will then load. This does not necessarily mean that it will directly load/perform all the functions of the js file but it will wait for the necessary triggers or events defined before it can do so.</li>
+                <li>Finally, the code is then executed line by line.</li>
+            </ol>
         </section>
         
         <footer class="content-footer">
@@ -137,6 +110,5 @@ section ~ strong {
             <p>School of Computing and Information Sciences</p>
             <p>Web Systems and Technologies</p>
         </footer>
-        
     </body>
 </html>

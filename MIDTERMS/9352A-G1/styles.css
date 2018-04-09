@@ -75,7 +75,7 @@ nav{
 	position: relative;
 }
 #nav > li.with-dropdown > ul > li:not(:last-child){
-	border-bottom: 1px solid #efefef;
+	border-bottom: 1px solid #E9DCCA;
 }
 #nav > li.with-dropdown > ul > li > a{
 	display: block;
@@ -93,14 +93,14 @@ ul > li.side-drop > ul.submenu{
 	box-shadow: 8px 8px 16px -3px rgba(0,0,0,0.2);
 	left: 100%;
 	top: 0;
-	background-color: #dcc7aa;
+	background-color: #E9DCCA;
 }
 ul > li.side-drop > ul.submenu > li{
 	display: block;
 	text-align: left;
 }
 ul > li.side-drop > ul.submenu > li:not(:last-child){
-	border-bottom: 1px solid #efefef;
+	border-bottom: 1px solid #F2EADF;
 }
 ul > li.side-drop > ul.submenu > li > a{
 	display: block;
@@ -153,9 +153,7 @@ ul > li.side-drop > ul.submenu > li > a{
 }
 footer{
 	float: left;
-	right: 0;
 	bottom: 0;
-	left: 0;
 	background-color: #3d3d3d;
 	color: white;
 	text-align: right;
@@ -165,6 +163,9 @@ footer{
 	border-top: 5px solid #f7882f;
 	margin-top: 1%;
 	width: 100%;
+	position: aboslute;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 footer p{
 	padding-right: 2%;
@@ -200,6 +201,20 @@ aside h2 span{
 	padding: 1% 5% 1% 8%;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
+#xhtml{
+	float: left;
+	background-color: #53db55;
+	padding: 2%;
+	width: 40%;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#html{
+	float: right;
+	background-color: #328cc1;
+	padding: 2%;
+	width: 40%;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
 section:not(#background){
 	font-family: Open-sans;
 	float: left;
@@ -207,23 +222,68 @@ section:not(#background){
 	padding: 2% 10% 0 10%;
 	margin: 0;
 }
+/* fonts */
 section h3{
 	color: #f7882f;
 	font-size: 1.7vw;
-}
-section ul{
-	list-style: square;
-}
-section ul li ul{
-	list-style: circle;
-}
-section ul li, section ol li{
-	line-height: 2;
 }
 section a, section a:visited{
 	text-decoration: underline;
 	color: #328cc1;
 }
+section h4{
+	text-align: center;
+	font-size: 1.7vw;
+}
+section span{
+	padding-left: 16%;
+	line-height: 1;
+}
+section h5{
+	text-align: center;
+	font-size: 1.5vw;
+	clear: both;
+	padding-top: 5%;
+}
+p:not(footer > p) {
+    font-size: 1.2vw;
+    text-align: justify;
+}
+section > p {
+    padding: 0;
+    text-align: justify;
+}
+strong.highlight-text {
+    font-size: 1.2vw;
+    color: #328cc1;
+}
+.text-note {
+    font-style: italic;
+    font-size: 1vw;
+}
+.sub-topic {
+    padding-left: 5%;
+    margin-bottom: 5%;
+}
+.sub-topic h4 {
+    text-align: left;
+    font-size: 1.3vw;
+}
+.p-center {
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	margin-top: -5%;
+	font-size: 1.5vw;
+	font-family: Open-Sans;
+}
+.p-center a {
+	color: #328cc1;
+	text-decoration: underline;
+}
+/* images */
 .right-fig{
 	float: right;
 	background-color: #6b7a8f;
@@ -246,93 +306,58 @@ figcaption.black-figcap {
     font-size: 1vw;
     font-style: italic;
 }
-section h4{
-	text-align: center;
-	font-size: 1.7vw;
-}
-section span{
-	padding-left: 16%;
-	line-height: 1;
-}
-section h5{
-	text-align: center;
-	font-size: 1.5vw;
-	clear: both;
-	padding-top: 5%;
-}
-.protocol{
-	color: red;
-	background: none;
-	font-weight: 600;
-}
-.domain-name{
-	color: blue;
-	background: none;
-	font-weight: 600;
-}
-.resource-name{
-	color: green;
-	background: none;
-	font-weight: 600;
-}
-section img:not(.center-img){
-	float: left;
-	padding-right: 5%; 
-}
-#xhtml{
-	float: left;
-	background-color: #53db55;
-	padding: 2%;
-	width: 40%;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-#html{
-	float: right;
-	background-color: #328cc1;
-	padding: 2%;
-	width: 40%;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-p:not(footer > p) {
-    font-size: 1.2vw;
-    text-align: justify;
-}
-section > p {
-    padding: 0;
-    text-align: justify;
-}
-strong.highlight-text {
-    font-size: 1.2vw;
-    color: #328cc1;
-}
 .left-img img {
-    float: left;
-    padding-right: 5%;
+	float: left;
+	padding-right: 5%;
+	margin: 0;
 }
-.right-img {
-    float: right;
-    padding-left: 5%;
+.right-img img{
+	float: right;
+	padding-left: 5%;
 }
 .center-img {
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
+/* list */
+section ul{
+	list-style: square;
+}
+section ul li ul{
+	list-style: circle;
+}
+section ul li, section ol li{
+	line-height: 2;
+}
 .main-list li {
-    font-weight: 800;
-    line-height: 1;
+    font-weight: 700;
+    line-height: 25px;
     margin-top: 5%;
     margin-bottom: 2%;
     font-size: 1.3vw;
     list-style-type: upper-roman;
 }
-.main-list > li:first-child {
+.main-list li p {
+	font-weight: 500;
+	font-size: 1.2vw;
+	padding: 0;
+}
+.sub-list li p {
+	font-weight: 500;
+	font-size: 1.2vw;
+	padding: 0;
+}
+ul.main-list > li:first-child {
     margin-top: 2%;
 }
-.main-list li + p {
+ul.main-list li + p {
     margin-top: 1%;
     margin-bottom: 3%
 }   
+ol.main-list li{
+    list-style-type: decimal;
+}
 .sub-list {
     margin-bottom: 3%;
 }
@@ -349,24 +374,55 @@ ul.sub-list li {
     font-weight: 600;
     list-style-type: disc;
 }
+ul.sub-list li pre{
+    font-weight: 500;
+}
+ul.main-list li pre{
+    font-weight: 500;
+}
 .sub-list-sample li {
     margin: 1%;
     list-style-type: circle;
     font-weight: 500;
+}
+.sub-sublist li{
+    margin-top: 5%;
+    list-style-type: circle;
+}
+/* mark */
+.mark-highlight{
+    background: #e1e1e1;
+    font-family: Consolas;
+    font-size: 1.2vw;
+}
+mark {
+	font-weight: 500;
+}
+.protocol{
+	color: red;
+	background: none;
+	font-weight: 600;
+}
+.domain-name{
+	color: blue;
+	background: none;
+	font-weight: 600;
+}
+.resource-name{
+	color: green;
+	background: none;
+	font-weight: 600;
 }
 .sub-list-sample mark {
     font-size: 1.2vw;
     background: #e1e1e1;
     font-family: Consolas;
 }
-.sub-sublist li{
-    margin-top: 5%;
-    list-style-type: circle;
-}
+/* preformatted text */
 pre{
     background: #e1e1e1;
     padding: 2% 2%;
-    margin: -2% auto 2% auto;
+    margin: 0% auto 2% auto;
     width: 90%;
     display: block;
     border: 0.1px solid #d3d3d3;
@@ -402,6 +458,7 @@ pre.valid{
 ul ~ pre {
 	margin-top: 2%;
 }
+/* table */
 table {
     border-collapse: collapse;
     width: 80%;
@@ -462,21 +519,4 @@ td mark {
 }
 .stat-codes tr td:last-child{
 	background-color: firebrick;
-}
-.text-note {
-    font-style: italic;
-    font-size: 1vw;
-}
-h6 {
-    font-size: 1.1vw;
-    margin-top: -2%;
-    font-weight: 500;
-}
-.sub-topic {
-    padding-left: 5%;
-    margin-bottom: 5%;
-}
-.sub-topic h4 {
-    text-align: left;
-    font-size: 1.3vw;
 }
