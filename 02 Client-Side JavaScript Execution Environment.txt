@@ -1,0 +1,78 @@
+Client-Side JavaScript Execution Environment
+    - Core JavaScript (EcmaScript) Language and API
+    
+    - (Traditional) Browser Object Model (BOM) API (non-standardized)
+        - Window, Navigator, Screen, Location, History, etc.
+    
+    - Document Object Model (DOM) API
+        - DOM API Interfaces
+            - Node, Document, Element, Text, Attr, 
+              DocumentType, Comment, etc.
+            - Event, EventTarget, EventListener, etc.
+            - CSSStyleSheet, CSSRule, etc.
+    
+    - Miscellaneous JavaScript Web APIs
+        - Geolocation, IndexedDB, Local Storage, File,
+          Push Notifications, Service Workers, Web Sockets, 
+          Web Workers, XMLHttpRequest (AJAX), etc.
+
+    * most of the APIs are accessed from scripts via the 
+      global object 'Window'
+
+
+
+Document Object Model (DOM)
+    - API that allows access to the HTML document from within scripts 
+      associated with the web page
+    - a parsed HTML document is represented by a 'DOM tree', which contains 
+      'nodes' representing elements, element attributes, textual content, 
+      and other HTML document components (e.g., DOCTYPE, comments, etc.)
+    - the API is accessed via the 'Document' object property of the global 
+      'Window' object
+
+
+    - DOM API functionalities:
+        - retrieve references to nodes (or node collections) in the DOM:
+            - getElementById()
+            - getElementsByTagName(), getElementsByClassName(), getElementsByName()
+            - querySelector(), querySelectorAll()
+
+        - traverse the DOM tree (from a given node):
+            - parentNode, parentElement
+            - childNodes, children
+            - firstChild, lastChild, nextSibling, previousSibling
+            - firstElementChild, lastElementChild, nextElementSibling, previousElementSibling
+
+        - construct/copy nodes:
+            - createElement(), createTextNode(), createAttribute(), etc.
+            - cloneNode(), importNode()
+
+        - manipulate the DOM tree:
+            - appendChild(), insertBefore(), replaceChild(), removeChild()
+            - adoptNode()
+
+        - miscellaneous attributes and methods:
+            - nodeType, nodeName, nodeValue
+            - attributes, id, tagName, className, classList
+            - ownerDocument, documentElement, hasChildNodes()
+            - normalize()
+
+            - manipulate attributes (for 'Element' nodes):
+                - setAttribute(), getAttribute(), removeAttribute()
+                - setAttributeNode(), getAttributeNode(), removeAttributeNode()
+
+            - event handling:
+                -addEventListener(), removeEventListener(), dispatchEvent()
+
+            - style handling:
+                - styleSheets, ownerRule, cssRules, insertRule(), deleteRule()
+                - getComputedStyle()
+
+
+            * although technically not defined as part of the DOM, browsers 
+              typically support other properties and methods that can be used to 
+              interact with the DOM tree:
+                - innerHTML, outerHTML, innerText, outerText
+                
+                - references to oft-used document sections and collections:
+                    - head, body, anchors, forms, images
