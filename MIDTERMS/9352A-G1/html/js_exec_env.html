@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-
-<html lang = "en">
-    <head>
-        <meta name="viewport" content="initial-scale=1">
-        <meta charset="UTF-8">
-        <title>Webtech 2018</title>
-        <link rel="stylesheet" type="text/css" href="../styles.css">
-        <link rel="icon" href="../favicon.ico" type="image/x-icon">
-    </head>
-    
-    <body>
-        <header>
+<html lang="en">
+<head>
+	<meta name="viewport" content="initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Webtech 2018</title>
+	<link rel="stylesheet" type="text/css" href="../styles.css">
+	<link rel="icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<header>
         <a href="../index.html"><img src="../img/webtech2.png" alt="Site Logo"></a>
         
         <nav>
@@ -50,7 +48,7 @@
                             <li><a href="css_pfp.html">CSS Preprocessors, Frameworks and Polyfills</a></li>      
                         </ul>
                         </li>
-                        <li><a href="">JavaScript</a></li>
+                        <li><a href="js.html">JavaScript</a></li>
                     </ul>
                 </li>
 
@@ -70,44 +68,63 @@
             </ul>
         </nav>
     </header>
-        
-        <aside>
-            <h2><span>CSS Statements</span></h2>
-        </aside>
-        
-        <section>
-            <h3>What are Statements?</h3>
-            <p><strong class = "highlight-text">Statements</strong> are building blocks that begin with non-space characters and end with a semi-colon or first enclosing curly brace. There are two types of statements:</p>
-                
-            <ol class ="main-list">
-                <li>CSS At-rules
-                <p>An <strong class = "highlight-text">At-rule statement</strong> starts with an at sign (<strong>@</strong>), and then followed by an identifier. Each type of at-rules may have its own internal syntax and semantics. These statements are used to convey conditional information, descriptive information and meta-data information. Here are some of examples of at-rules used in CSS:</p>
-                
-                <ul class = "sub-list-sample">
-                    <li><mark>@charset</mark></li>
-                    <li><mark>@import</mark></li>
-                    <li><mark>@namespace</mark></li>
-                    <li><mark>@document</mark></li>
-                    <li><mark>@font-face</mark></li>
-                    <li><mark>@keyframes</mark></li>
-                    <li><mark>@media</mark></li>
-                    <li><mark>@page</mark></li>
-                    <li><mark>@supports</mark></li>
+
+	<aside>
+		<h2><span>JS Client-Side Execution Environment</span></h2>
+	</aside>
+    
+    <section>
+        <h3>Client-Side JS</h3>
+        <ul>
+            <li>is an extended version of JavaScript that enables the enhancement and manipulation of web pages and client browsers</li>
+            <li>it is dependent on the core JavaScript and cannot work without it.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Core JavaScript (ECMAScript)</h3>
+        <ul>
+            <li>the base JavaScript language</li>
+            <li>ECMASCRIPT is the standard for scripting languages</li>
+            <li>JavaScript and other scripting languages use ECMAScript as their core</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>(Traditional) Browser Object Model (BOM) API</h3>
+        <ul>
+            <li><strong>non-standardized</strong> meaning browser verndors are free to implement the BOM in any way they wish.</li>
+            <li>is a heirarchy of browser objects used to manipulate properties and methods related to the browser itself</li>
+            <li>Objets include: <em>window, navigator, screen, location, history, etc.</em></li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Document Object Model (DOM) API</h3>
+        <ul>
+            <li>DOM API Interfaces
+                <ul>
+                    <li><em>Node, Document, Element, Text, Attr, DocumentType, Comment, etc.</em></li>
+                    <li><em>Event, EventTarget, EventListener, etc.</em></li>
+                    <li><em>CSSStyleSheet, CSSRule, etc.</em></li>
                 </ul>
-                </li>
-                    
-                <li>CSS Rule-sets
-                <p><strong class = "highlight-text">CSS Rule-sets</strong> consists of selector(s) followed by an enclosed declaration block, which contains one or more declarations. Each declaration must end with semi-colon, otherwise the declarations will not be applied except the first declaration. </p>
-                </li>
-            </ol>
-        </section>            
-        
-        <footer class="content-footer">
-            <p>© 2018 All Rights Reserved.</p>
-            <p>Saint Louis University, Baguio City</p>
-            <p>School of Computing and Information Sciences</p>
-            <p>Web Systems and Technologies</p>
-        </footer>
-        
-    </body>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Misc. JavaScript Web APIs</h3>
+        <ul>
+            <li><em>Geolocation, IndexedDB, Local Storage, File, Push Notifications, Service Workers, Web Sockets, Web Workers, XMLHttpRequest (AJAX), etc.</em></li>
+        </ul>
+        <h5>Most of the APIs are accessed from scripts via the global object 'Window' </h5>
+    </section>
+
+	<footer class="content-footer">
+		<p>© 2018 All Rights Reserved.</p>
+		<p>Saint Louis University, Baguio City</p>
+		<p>School of Computing and Information Sciences</p>
+		<p>Web Systems and Technologies</p>
+	</footer>
+</body>
 </html>

@@ -100,12 +100,14 @@
         <ul>
             <li><strong>Document Structure</strong>
                 <ul class="list-sample">
-                    <li>XHTML DOCTYPE is mandatory</li>
-                    <pre>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                    <li>XHTML DOCTYPE is mandatory
+                        <pre>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</pre>
-                    <li>The xmlns attribute in &lt;html&gt; is mandatory</li>
-                    <pre>&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;</pre>
-                    <li>&lt;html&gt;, &lt;head&gt;, &lt;title&gt;, and &lt;body&gt; are mandatory</li>
+                    </li>
+                    <li>The xmlns attribute in &lt;html&gt; is mandatory
+                        <pre>&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;</pre>
+                    </li>
+                    <li>&lt;html&gt;, &lt;head&gt;, &lt;title&gt;, and &lt;body&gt; are mandatory
                     <pre>
     &lt;head&gt; 
         &lt;title&gt;Title of document&lt;/title&gt; 
@@ -114,56 +116,69 @@
         some content 
     &lt;/body&gt;
 &lt;/html&gt;</pre>
+                    </li>
                 </ul>
             </li>
+
             <li><strong>XHTML Elements</strong>
                 <ul>
-                    <li>Elements must be properly nested</li>
-                    <strong>Invalid:</strong>
-                    <pre class="invalid">&lt;h2&gt;&lt;em&gt;Header1&lt;/h2&gt;&lt;/em&gt;</pre>
-                    <strong>Valid:</strong>
-                    <pre class="valid">&lt;h2&gt;&lt;em&gt;Header1&lt;/em&gt;&lt;/h2&gt;</pre>
-
-                    <li>Elements must always be closed</li>
-                    <strong>Invalid:</strong>
-                    <pre class="invalid">&lt;em&gt;Text
+                    <li>Elements must be properly nested
+                        <br>
+                        <strong>Invalid:</strong>
+                        <pre class="invalid">&lt;h2&gt;&lt;em&gt;Header1&lt;/h2&gt;&lt;/em&gt;</pre>
+                        <strong>Valid:</strong>
+                        <pre class="valid">&lt;h2&gt;&lt;em&gt;Header1&lt;/em&gt;&lt;/h2&gt;</pre>
+                    </li>
+                    <li>Elements must always be closed
+                        <br>
+                        <strong>Invalid:</strong>
+                        <pre class="invalid">&lt;em&gt;Text
 &lt;br&gt;
 &lt;hr&gt;
 &lt;img src="" alt=""&gt;</pre>
-                    <strong>Valid:</strong>
-                    <pre class="valid">&lt;em&gt;Text&lt;/em&gt;
+                        <strong>Valid:</strong>
+                        <pre class="valid">&lt;em&gt;Text&lt;/em&gt;
 &lt;br /&gt;
 &lt;hr /&gt;
 &lt;img src="" alt="" /&gt;</pre>
-                    <li>Elements must be in lowercase</li>
-                    <strong>Invalid:</strong>
-                    <pre class="invalid">&lt;B&gt;Hello&lt;/B&gt;</pre>
-                    <strong>Valid:</strong>
-                    <pre class="valid">&lt;b&gt;Hello&lt;/b&gt;</pre>
+                    </li>
+
+                    <li>Elements must be in lowercase
+                        <br>
+                        <strong>Invalid:</strong>
+                        <pre class="invalid">&lt;B&gt;Hello&lt;/B&gt;</pre>
+                        <strong>Valid:</strong>
+                        <pre class="valid">&lt;b&gt;Hello&lt;/b&gt;</pre>
+                    </li>
 
                     <li>Documents must have one root element</li>
-                    <br>
                 </ul>
             </li>
             <li><strong>XHTML Attributes</strong>
                 <ul>
-                    <li>Attribute names must be in lower case</li>
-                    <strong>Invalid:</strong>
-                    <pre class="invalid">&lt;div WIDTH="50%"&gt;</pre>
-                    <strong>Valid:</strong>
-                    <pre class="valid">&lt;div width="50%"&gt;</pre>
+                    <li>Attribute names must be in lower case
+                        <br>
+                        <strong>Invalid:</strong>
+                        <pre class="invalid">&lt;div WIDTH="50%"&gt;</pre>
+                        <strong>Valid:</strong>
+                        <pre class="valid">&lt;div width="50%"&gt;</pre>
+                    </li>
 
-                    <li>Attribute values must be quoted</li>
-                    <strong>Invalid:</strong>
-                    <pre class="invalid">&lt;div width=50%&gt;</pre>
-                    <strong>Valid:</strong>
-                    <pre class="valid">&lt;div width="50%"&gt;</pre>
+                    <li>Attribute values must be quoted
+                        <br>
+                        <strong>Invalid:</strong>
+                        <pre class="invalid">&lt;div width=50%&gt;</pre>
+                        <strong>Valid:</strong>
+                        <pre class="valid">&lt;div width="50%"&gt;</pre>
+                    </li>
 
-                    <li>Attribute minimization is forbidden</li>
-                    <strong>Invalid:</strong>
-                    <pre class="invalid">&lt;input type="checkbox" name="vehicle" value="car" checked /&gt;</pre>
-                    <strong>Valid:</strong>
-                    <pre class="valid">&lt;input type="checkbox" name="vehicle" value="car" checked="checked" /&gt;</pre>
+                    <li>Attribute minimization is forbidden
+                        <br>
+                        <strong>Invalid:</strong>
+                        <pre class="invalid">&lt;input type="checkbox" name="vehicle" value="car" checked /&gt;</pre>
+                        <strong>Valid:</strong>
+                        <pre class="valid">&lt;input type="checkbox" name="vehicle" value="car" checked="checked" /&gt;</pre>
+                    </li>
                 </ul>
             </li>
         </ul>

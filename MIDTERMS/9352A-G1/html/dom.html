@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Webtech 2018</title>
+	<link rel="stylesheet" type="text/css" href="../styles.css">
+	<link rel="icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<header>
+        <a href="../index.html"><img src="../img/webtech2.png" alt="Site Logo"></a>
+        
+        <nav>
+            <ul id="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li class="with-dropdown">
+                    <a href="">Prelim</a>
+                    <ul class="menu">
+                        <li><a href="www.html">WWW</a></li>
+                        <li class="side-drop"><a href="http.html">HTTP</a>
+                            <ul class="submenu">
+                                <li><a href="headers.html">HTTP Headers</a></li>
+                                <li><a href="methods.html">HTTP Methods</a></li>
+                                <li><a href="reqresmessages.html">HTTP Request & Response Messages</a></li>
+                            </ul>
+                        </li>
+                        <li class="side-drop"><a href="html.html">HTML</a>
+                            <ul class="submenu">
+                                <li><a href="htmlhistory.html">HTML History</a></li>
+                                <li><a href="xhtml.html">XHTML & HTML</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="with-dropdown">
+                    <a href="">Midterm</a>
+                    <ul class="menu">
+                        <li class="side-drop"><a href="css.html">CSS</a>
+                        <ul class="submenu">
+                            <li><a href="css_statements.html">CSS Statements</a></li>
+                            <li><a href="css_selectors.html">CSS Selectors</a></li>
+                            <li><a href="css_combinators.html">CSS Combinators</a></li>
+                            <li><a href ="css_pseudoclasses_elements.html">CSS Pseudo Classes and Elements</a></li>
+                            <li><a href="css_ruleprecedence.html">CSS Rule Precedence</a></li>
+                            <li><a href="css_declarations.html">CSS Declarations</a></li>
+                            <li><a href="css_pfp.html">CSS Preprocessors, Frameworks and Polyfills</a></li>      
+                        </ul>
+                        </li>
+                        <li><a href="">JavaScript</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="">Finals</a>
+                    <!-- ul class="menu">
+                        <li><a href="">Item1</a></li>
+                        <li><a href="">Item2</a></li>
+                        <li><a href="">Item3</a></li>
+                        <li><a href="">Item4</a></li>
+                    </ul> -->
+                </li>
+
+                <li>
+                    <a href="">Self Assessment</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+	<aside>
+		<h2><span>Document Object Model (DOM)</span></h2>
+	</aside>
+    
+    <section>
+        <h3> What is DOM? </h3>
+        <ul>
+            <li>is an Application Programming Interface <strong>(API)</strong> for HTML & XML documents</li>
+            <li>it allows access to the HTML document from within scripts associated with the web page</li>
+            <li>a parsed HTML document is represented by a <strong>DOM tree</strong>, which contains <strong>nodes</strong> representing elements, element attributes, textual content, and other HTML document components <em>e.g: DOCTYPE, comments, etc.</em></li>
+            <li>the API is accessed via the <strong>Document</strong> object property of the global <strong>Window</strong> object.</li>
+            <li>it provides a standard programming interface that can be used in a wide variety of environments and applications since it is a W3C specification.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>DOM Functionalities</h3>
+        <ul>
+            <li><strong>Retrieve references to nodes or (node collections) in the DOM:</strong></li>
+        </ul>
+        <table>
+                <tr>
+                    <td><mark>getElementById()</mark></td>
+                    <td><p>returns the element that has the specified value of the ID attribute</p></td>
+                </tr>
+                <tr>
+                    <td><mark>getElementsByTagName()</mark></td>
+                    <td><p>returns all the elements that has the specified tag name</p></td>
+                </tr>
+                <tr>
+                    <td><mark>getElementsByClassName()</mark></td>
+                    <td><p>returns all the elements that has the specified class name</p></td>
+                </tr>
+                <tr>
+                    <td><mark>getElementsByName()</mark></td>
+                    <td><p>returns all the elements that has the specified name (the value of the name attribute)</p></td>
+                </tr>
+                <tr>
+                    <td><mark>querySelector()</mark></td>
+                    <td><p>returns the first element that matches a specified CSS selector</p></td>
+                </tr>
+                <tr>
+                    <td><mark>querySelectorAll()</mark></td>
+                    <td><p>returns all the elements that matches a specified CSS selector</p></td>
+                </tr>
+            </table>
+        <ul>
+            <li><strong>Traverse the DOM tree (from a given node:) </strong></li>
+        </ul>
+            <table>
+                <tr>
+                    <td><mark>parentNode</mark></td>
+                    <td><p>returns the parent node of the specified node as a Node object</p></td>
+                </tr>
+                <tr>
+                    <td><mark>parentElement</mark></td>
+                    <td><p>returns the parent element of the specified element</p></td>
+                </tr>
+                <tr>
+                    <td><mark>childNodes</mark></td>
+                    <td><p>returns all of the node's child nodes as a NodeList object</p></td>
+                </tr>
+                <tr>
+                    <td><mark>children</mark></td>
+                    <td><p>returns all of an element's child elements as an HTMLCollection object</p></td>
+                </tr>
+                <tr>
+                    <td><mark>firstChild</mark></td>
+                    <td><p>returns the first child node of the specified node as a Node object</p></td>
+                </tr>
+                <tr>
+                    <td><mark>lastChild</mark></td>
+                    <td><p>returns the last child node of the specified node as a Node object</p></td>
+                </tr>
+                <tr>
+                    <td><mark>nextSibling</mark></td>
+                    <td><p>returns the next node after the specified node in the same tree level</p></td>
+                </tr>
+                <tr>
+                    <td><mark>previousSibling</mark></td>
+                    <td><p>returns the previous node after the specified node in the same tree level</p></td>
+                </tr>
+                <tr>
+                    <td><mark>firstElementChild</mark></td>
+                    <td><p>returns the first child element of the specified element</p></td>
+                </tr>
+                <tr>
+                    <td><mark>lastElementChild</mark></td>
+                    <td><p>returns the last child element of the specified element</p></td>
+                </tr>
+                <tr>
+                    <td><mark>nextElementSibling</mark></td>
+                    <td><p>returns the next element after the specified element in the same tree level</p></td>
+                </tr>
+                <tr>
+                    <td><mark>previousElementSibling</mark></td>
+                    <td><p>returns the previous element after the specified element in the same tree level</p></td>
+                </tr>
+            </table>
+        <ul>
+            <li><strong>Construct/copy nodes:</strong></li>
+        </ul>
+            <table>
+                <tr>
+                    <td><mark>createElement()</mark></td>
+                    <td><p>creates an element node with the specified name</p></td>
+                </tr>
+                <tr>
+                    <td><mark>createTextNode()</mark></td>
+                    <td><p>creates a text Node with the specified text</p></td>
+                </tr>
+                <tr>
+                    <td><mark>createAttribute()</mark></td>
+                    <td><p>creates an attribute with the specified name and returns the attribute as an Attr object</p></td>
+                </tr>
+                <tr>
+                    <td><mark>cloneNode()</mark></td>
+                    <td><p>creates a copy of a node and returns the clone</p></td>
+                </tr>
+                <tr>
+                    <td><mark>importNode()</mark></td>
+                    <td><p>imports a node from another document</p></td>
+                </tr>
+            </table>
+        <ul>
+            <li><strong>Manipulate the DOM tree:</strong></li>
+        </ul>
+            <table>
+                <tr>
+                    <td><mark>appendChild()</mark></td>
+                    <td><p>appends a node as the last child of the node</p></td>
+                </tr>
+                <tr>
+                    <td><mark>insertBefore()</mark></td>
+                    <td><p>inserts a node as a child right before an existing child that you specified</p></td>
+                </tr>
+                <tr>
+                    <td><mark>replaceChild()</mark></td>
+                    <td><p>replaces a child node with a new node</p></td>
+                </tr>
+                <tr>
+                    <td><mark>removeChild()</mark></td>
+                    <td><p>removes a specific child node of the specified element</p></td>
+                </tr>
+                <tr>
+                    <td><mark>adoptNode()</mark></td>
+                    <td><p>adopts a node from another document </p></td>
+                </tr>
+            </table>
+        <ul>
+            <li><strong>Misc. Attributes and Methods</strong></li>
+        </ul>
+            <table>
+                <tr>
+                    <td><mark>nodeType</mark></td>
+                    <td><p>returns the node type as a number of the specified code</p></td>
+                </tr>
+                <tr>
+                    <td><mark>nodeName</mark></td>
+                    <td><p>returns the name of a specific node</p></td>
+                </tr>
+                <tr>
+                    <td><mark>nodeValue</mark></td>
+                    <td><p>sets or returns the node value of the specific node</p></td>
+                </tr>
+                <tr>
+                    <td><mark>attributes</mark></td>
+                    <td><p>returns the specified node's attributes</p></td>
+                </tr>
+                <tr>
+                    <td><mark>id</mark></td>
+                    <td><p>returns the id of an element </p></td>
+                </tr>
+                <tr>
+                    <td><mark>tagName</mark></td>
+                    <td><p>returns the tagName of an element</p></td>
+                </tr>
+                <tr>
+                    <td><mark>className</mark></td>
+                    <td><p>returns the className of an element</p></td>
+                </tr>
+                <tr>
+                    <td><mark>classList</mark></td>
+                    <td><p>returns the className's of an element as a DOMTokenList object</p></td>
+                </tr>
+                <tr>
+                    <td><mark>ownerDocument</mark></td>
+                    <td><p>returns the owner document of a node, as a Document object</p></td>
+                </tr>
+                <tr>
+                    <td><mark>documentElement</mark></td>
+                    <td><p>returns the documentElement as an Element object</p></td>
+                </tr>
+                <tr>
+                    <td><mark>hasChildNodes()</mark></td>
+                    <td><p>returns true if the node has any child nodes, if none, returns false</p></td>
+                </tr>  
+                <tr>
+                    <td><mark>normalize()</mark></td>
+                    <td><p>removes empty text nodes and joins adjacent text nodes</p></td>
+                </tr> 
+            </table>
+            <ul class="sub-list">
+                <li>Manipulate attributes (for Element nodes):</li>
+            </ul>
+                <table>
+                    <tr>
+                        <td><mark>setAttribute()</mark></td>
+                        <td><p>adds the specified attribute to an element then gives it the value</p></td>
+                    </tr>
+                    <tr>
+                        <td><mark>getAttribute()</mark></td>
+                        <td><p>returns the value of the attribute</p></td>
+                    </tr>
+                    <tr>
+                        <td><mark>removeAttribute()</mark></td>
+                        <td><p>removes the attribute from an element</p></td>
+                    </tr>
+                    <tr>
+                        <td><mark>setAttributeNode()</mark></td>
+                        <td><p>adds the specified attribute node to an element</p></td>
+                    </tr>
+                    <tr>
+                        <td><mark>getAttributeNode()</mark></td>
+                        <td><p>returns the attribute node with the name of the element as an Attr object</p></td>
+                    </tr>
+                    <tr>
+                        <td><mark>removeAttributeNode()</mark></td>
+                        <td><p>removes the attribute from an element then returns the attribute that was removed</p></td>
+                    </tr>
+                </table>
+            <ul class="sub-list">
+                <li><strong>Event Handling:</strong></li>
+            </ul>
+                <table>
+                    <tr>
+                        <td><mark>addEventListener()</mark></td>
+                        <td><p>attaches an event handler</p></td>
+                    </tr>
+                    <tr>
+                        <td><mark>removeEventListener()</mark></td>
+                        <td><p>removes an event handler</p></td>
+                    </tr>
+                    <tr>
+                        <td><mark>dispatchEvent()</mark></td>
+                        <td><p>dispatches an event and invokes the EventListeners that it possesses</p></td>
+                    </tr>
+                </table>
+            <ul class="sub-list">
+                <li><strong>Style Handling:</strong></li>
+            </ul>
+                <table>
+                    <tr>
+                        <td><mark>styleSheets</mark></td>
+                        <td><p>returns a StyleSheetList of CSSStyleSheet objects</p></td>
+                    </tr>
+                    <tr>
+                        <td><mark>ownerRule</mark></td>
+                        <td><p>returns CSSImportRule, else returns null if not imported into the document</p></td>
+                    </tr>
+                    <tr>
+                        <td><mark>cssRules</mark></td>
+                        <td><p>returns a live CSSRuleList</p></td>
+                    </tr>
+                    <tr>
+                        <td><mark>insertRule()</mark></td>
+                        <td><p>inserts a new rule in the stylesheet</p></td>
+                    </tr>
+                    <tr>
+                        <td><mark>deleteRule()</mark></td>
+                        <td><p>deletes a rule in the stylesheet</p></td>
+                    </tr>
+                    <tr>
+                        <td><mark>getComputedStyle()</mark></td>
+                        <td><p>gets all the CSS properties and values</p></td>
+                    </tr>
+                </table>
+        <em>Taken from: https://www.w3schools.com & https://developer.mozilla.org</em>
+    </section>
+
+	<footer class="content-footer">
+		<p>© 2018 All Rights Reserved.</p>
+		<p>Saint Louis University, Baguio City</p>
+		<p>School of Computing and Information Sciences</p>
+		<p>Web Systems and Technologies</p>
+	</footer>
+</body>
+</html>
